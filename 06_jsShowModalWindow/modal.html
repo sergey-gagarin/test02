@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" >
+ // function showDialogArgs(){
+ // if(window.dialogArguments==""){
+//	   alert("No image to display"); 
+//	   return false;
+ //  }else{
+ // 	document.getElementById('mydiv').innerHTML =
+ //       "<img src='"+window.dialogArguments+"'/>";
+ //  }
+//  }
+  </script>
+<script src="jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" >
+
+//$(window).unload(function() { 	  alert('Handler for .unload() called.'); 	});
+
+
+
+</script>
+<!--  onbeforeunload="alert('Closing');" - This bit work good for clicking on links as well !!! -->
+</head>
+ <body onload="return showDialogArgs();" onbeforeunload="alert('Closing/reloading'); URL = unescape(window.opener.location.pathname);window.opener.location.href = URL; ">
+ 
+ 
+ <center>
+  <div style="background: #ff9900; width:'100%';" 
+       align="center">
+   <font color="#0000ff" size="12pt">
+	<b>Modal page</b>
+   </font>
+  </div>
+  <div id="mydiv"></div>
+ </center>
+ 
+ <a href="http://www.google.com.au">Google </a>
+ <br>
+ 
+ <a href="modal.html">Link to itself</a>
+ 
+ <a href ="javascript:var URL = unescape(window.opener.location.pathname);window.opener.location.href = URL; window.close();">
+   
+   6 click here to close the window</a>
+ 
+ </body>
+
+</html>

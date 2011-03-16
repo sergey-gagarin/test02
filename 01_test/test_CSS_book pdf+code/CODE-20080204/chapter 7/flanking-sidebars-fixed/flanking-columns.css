@@ -1,0 +1,99 @@
+/* ----------  page defaults ---------- */
+
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		background: #cccccc;
+		padding-bottom: 20px;
+		}
+
+#masthead, #columnWrapper, #footer {
+		font: 1.1em/1.5 Verdana, Arial, sans-serif;
+		}
+
+/* ---------- font styles ---------- */
+
+h1, h2 {
+		font: bold 1.5em Arial, sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 2px;
+		}
+
+p {
+		margin-bottom: 1em;
+		}
+
+/* ---------- structure ---------- */
+
+#masthead {
+		background: #dddddd;
+		padding: 10px;
+		border-bottom: 1px solid #aaaaaa;
+		}
+
+#footer {
+		background: #cccccc;
+		border-top: 1px solid #aaaaaa;
+		padding: 10px;
+		}
+
+.clearFix:after {
+		content: '.';
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		}
+
+/* ---------- add your code below ---------- */
+
+#columnWrapper {
+		background: #ebebeb url(assets/grey-shadow-top.gif) 0 0 repeat-x;
+		}
+
+#mainContent {
+		background: #ffffff url(assets/white-shadow-top.gif) 0 0 repeat-x;
+		float: left;
+		width: 400px;
+		margin-left: 175px;
+		}
+		
+#leftSidebar {
+		float: left;
+		width: 175px;
+		margin-left: -575px;
+		}
+	
+#rightSidebar {
+		float: left;
+		width: 125px;
+		}
+		
+.columnContentWrapper {
+		padding: 30px 10px;
+		}
+		
+#mainContent, #leftSidebar, #rightSidebar {
+		padding-bottom: 32767px !important;
+		margin-bottom: -32767px !important;
+		}
+		
+#columnWrapper {
+		overflow: hidden;
+		}		
+		
+#wrapper {
+		width: 700px;
+		margin: 0 auto;
+		border: 1px solid #555555;
+		border-top: 0;
+		}		
+		

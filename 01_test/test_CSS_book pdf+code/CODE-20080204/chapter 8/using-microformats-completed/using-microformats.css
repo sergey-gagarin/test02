@@ -1,0 +1,53 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.8 Verdana, Arial, Helvetica, sans-serif;
+		padding: 18px;
+		/*background: url(styling-semantic-text-baseline.gif);*/
+		}
+
+/* ---------- add your code below ---------- */
+
+
+h1 {
+		font: bold 1.5em/1.2em Arial, Helvetica sans-serif;
+		margin-bottom: 1.2em;
+		text-transform: uppercase;
+		}
+
+h2 {
+		font: bold 1.25em/1.44em Arial, Helvetica sans-serif;
+		text-transform: uppercase;
+		}
+
+p {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+		}
+
+.hidden {
+		display: none;
+		}
+
+.tel, .fn {
+		margin-bottom: 0;
+		}
+
+.org {
+		font-weight: bold;
+		}
+
+.vcard {
+		width: 200px;
+		background: #eeeeee;
+		border: 1px solid #cccccc;
+		padding: 8px;
+		margin-bottom: 1.5em;
+		}

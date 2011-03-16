@@ -1,0 +1,150 @@
+To check : http://www.digitalbucket.net/
+
+Service Example: http://www.abundanttech.com/WebServices/AtomicClock/AtomicClock.asmx
+
+Some answers http://sourceforge.net/projects/nusoap/develop
+SSL: http://sourceforge.net/projects/nusoap/forums/forum/193579/topic/3780097
+$client = new soapclient('https://csunix.mohawkcollege.ca/~000292654/php/SOAP/script/server.php');
+$client->setCredentials($DB["user"], $DB["password"]);
+Responses with ArrAYS:
+http://stackoverflow.com/questions/974139/nusoap-and-response-with-array
+Casting objects
+http://stackoverflow.com/questions/3621603/how-to-encode-php-object-to-nusoap-response
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+See server03.php
+// From http://osdir.com/ml/php.nusoap.general/2004-11/msg00058.html
+
+function UploadFile($bytes, $filename) {
+> > // Save file to specified directory using filename
+> > $fp = fopen("upload_directory/$filename", "w");
+> > fwrite($fp, base64_decode($bytes));
+> > fclose($fp);
+> > return true;
+> > }
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Service
+http://www.digitalbucket.net/
+
+
+
+##############################
+Send File - FAX over nuSOAP
+http://www.interfax.net/en/dev/webservice/samples/fax_php_sendfaxex_nusoap
+
+<?php
+ 
+require_once('nusoap.php');
+ 
+$username     = "";
+$password     = "";
+$faxnumber    = "";  // formatted like +13055551234,
+                     // i.e. +(country code)(area code)(phone number)
+$file         = "";  // binary file to fax
+$filetype     = "";  // e.g. HTML, DOC, PDF, etc.; see
+                     // documentation for complete list
+$postponetime = "";  // e.g. 2001-04-25T20:31:00-04:00,
+                     // use a past date/time to fax immediately
+$resolution   = "";  // 0 for standard, 1 for fine
+$csid         = "";  // your fax identifier, visible on
+                     // the receiving machine's little screen
+$subject      = "";  // for your reference, visible in the outbound queue
+$replyemail   = "";  // optional address at which to receive an
+                     // emailed confirmation
+ 
+// Open File
+if( !($fp = fopen($file, "r")))
+{
+// Error opening file
+// Handle error how it is appropriate for your script
+exit;
+}
+ 
+// Read data from the file into $data
+$data = "";
+while (!feof($fp)) $data .= fread($fp,1024);
+ 
+$client = new soapclient("http://ws.interfax.net/dfs.asmx?wsdl", true);
+ 
+$params[] = array('Username'       =>  $username,
+                'Password'         =>  $password,
+                'FaxNumbers'       =>  $faxnumber,
+                'FilesData'        =>  base64_encode($data),
+                'FileTypes'        =>  $filetype,
+                'FileSizes'        =>  strlen($data),
+                'Postpone'         =>  $postponetime,
+                'IsHighResolution' =>  $resolution, 
+                'CSID'             =>  $csid,
+                'Subject'          =>  $subject,
+                'ReplyAddress'     =>  $replyemail
+                );
+ 
+$result = $client->call("SendfaxEx", $params);
+ 
+echo $result["SendfaxExResult"];
+ 
+?>
+
+//
+// Only Server Side file-Uploading - ?
+http://www.wackylabs.net/2004/10/nusoap-web-service-example-file/
+
+
+
+// On-line 64_encoding:
+http://www.tools4noobs.com/online_php_functions/base64_encode/
+
+
+
+
+
+
+
+/////////// OLD
+
+
+
+
+http://java.sun.com/developer/technicalArticles/xml/webservices/
+
+XML is definition-driven (through the use of DTDs and schemas) and allows information 
+to be manipulated programmatically. This means that most of the guess work can be taken out of B2B communication.
+ Tags can be agreed upon, interfaces can be defined and processing can be standardized.
+  Web services are reusable component programs that utilize XML as a standard, 
+  extensible communication framework to facilitate this type of computer-to-computer communication.
+  
+  Find - ??
+  A Web services framework consists of a publish-find-bind cycle, whereby service providers make data, 
+  content or services available to registered service requesters who consume resources by locating 
+  and binding to services.
+  
+  
+  the strenth 
+  SOAP also defines data encoding rules, called base level encodings or "Section 5" encodings, from the section of the SOAP spec that describes them. It should be pointed out that SOAP encodings take up most of the space in the 40-page SOAP 1.1 spec. Without getting bogged down too deeply in XML data type specifics -- a swamp still being drained by experts over at the XML Schema group -- SOAP encodings can be described briefly as a collection of either simple or compound values.
+
+Simple values are either simple types, like ints, floats and strings, or built-in types as defined in Part 2 of the XML Schema specification. These include data types such as arrays of bytes and enumerations.
+
+Compound values include structures, arrays and complex types as defined -- again -- by the XML Schema group. Last, but certainly not least, SOAP data encodings specify rules for object serialization; that is, mechanisms for marshaling and unmarshaling data streams across the net. It's important to note that these "Section 5" encodings are not mandatory in any way, so clients and servers are free to use different conventions for encoding data as long as they agree on format. Doing so, however, countermands the push SOAP gives to standardized services on the net and comes with the usual caveat: your mileage may vary. Individual clients and servers are nonetheless free to take the road less traveled.
+
+!!!!!!!!!   
+Finally, SOAP establishes a set of rules that enable clients and servers to do remote procedure invocation using SOAP as a communications framework. SOAP -- at base a message-oriented protocol -- can, with these conventions, work well as an RPC-type protocol. Object serialization is the mechanism that gives SOAP-RPC its punch. 
+  
+  
+  
+  Wiki
+  
+  XML-RPC is a remote procedure call (RPC) protocol which uses XML 
+  to encode its calls and HTTP as a transport mechanism.[1] 
+  
+
+GOOD START
+
+http://en.wikipedia.org/wiki/Modular_programming  :
+
+PROGRAMMING paradigms - list !
+
+
+   

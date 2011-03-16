@@ -1,0 +1,78 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+img {
+		border: 1px solid #666666;
+		}
+
+#popupContainer a:link, #popupContainer a:visited {
+		position: relative;
+		display: block;
+		width: 500px;
+		text-decoration: none;
+		color: #000000;
+		}
+
+#popupContainer a span {
+		position: absolute;
+		left: -10000px;
+		top: -10000px;
+		}
+
+#popupContainer a:hover span, #popupContainer a:focus span, #popupContainer a:active span {
+		display: block;
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 360px;
+		color: #000000;
+		font: 1.1em/1.5 Arial, Helvetica, sans-serif;
+		margin-top: -335px;
+		margin-left: 50px;
+		padding: 20px;
+		background-color: #e0e4ef;
+		border: 1px solid #666666;
+		}
+
+#popupContainer a:hover span img, #popupContainer a:focus span img, #popupContainer a:active span img {
+		border: 1px solid #666666;
+		float: right;
+		margin-left: 15px;
+		margin-bottom: 5px;
+		}
+
+.clearFix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		}
+
+/* below: hasLayout fix for IE 6 - in a complete site, this would be added via a conditional comment */
+
+#popupContainer a:hover {
+		text-indent: 0;
+		}

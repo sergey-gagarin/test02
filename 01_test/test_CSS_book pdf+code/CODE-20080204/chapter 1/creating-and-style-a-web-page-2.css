@@ -1,0 +1,45 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		color: #ffffff;
+		background: #000000;
+		padding: 20px;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		margin: 0 auto;
+		width: 500px;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+h1 {
+		font: 1.5em/1.8em Arial, sans-serif;
+		color: #bbbbbb;
+		}
+
+blockquote {
+		margin: 0 100px;
+		border-left: 3px solid #888888;
+		border-right: 3px solid #888888;
+		padding: 0 20px;
+		}
+
+blockquote p {
+		font-weight: bold;
+		font-size: 1.0em;
+		}

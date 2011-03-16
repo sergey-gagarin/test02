@@ -1,0 +1,36 @@
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #CC9966;
+  padding: 50px;
+}
+
+#viewOptions{
+  background: #00CC99;
+  border: 3px ridge white;
+  width: 300px;
+  outline: solid 2px #00CC99;
+  padding: 5px;
+}
+
+
+#viewOptions ul{list-style-type: none;}
+
+
+#view2 {
+
+  width: 500px;
+  height: 300px;
+  overflow: auto;
+  border: groove 3px white;
+}
+
+#view2 div{
+display: none;
+width: 300px;
+}

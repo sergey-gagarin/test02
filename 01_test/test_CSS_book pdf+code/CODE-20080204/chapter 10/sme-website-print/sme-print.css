@@ -1,0 +1,113 @@
+/* 
+
+PRINT STYLE SHEET FOR WE LAY FLOORS, INC EXAMPLE WEB SITE
+Created by Craig Grannell
+www.snubcommunications.com
+
+ToC
+
+	1. defaults
+	2. structure
+	3. links and navigation
+	4. fonts
+	5. images
+
+Notes
+
+*/
+
+
+
+/* --------- 1. defaults  --------- */
+
+body {
+		padding: 0 5%;
+		background: #ffffff;
+		font-family: Baskerville, "Times New Roman", "Times", serif;
+		line-height: 16pt;
+		}
+		
+/*  --------- 2. structure  --------- */
+
+#masthead {
+		display: none;
+		}
+		
+.columnLeft, .columnRight {
+		float: left;
+		width: 45%;
+		}
+
+.columnLeft {
+		margin-right: 9.99%;
+		}
+				
+/* ---------- 3. links and navigation ---------- */
+
+a:link, a:visited {
+		text-decoration: underline;
+		}
+
+/* ---------- 4. fonts ---------- */
+
+h1, h2 {
+		font-family: Helvetica, Arial, sans-serif;
+		}
+
+h1 {
+		font-size: 16pt;
+		}
+
+h2 {
+		font-size: 13pt;
+		}
+
+p {
+		font-size: 12pt;
+		margin-bottom: 1em;
+		}
+
+p.footer {
+		clear: both;
+		text-align: right;
+		font-size: 11pt;
+		}
+
+blockquote {
+		margin: 16pt 20%;
+		}
+		
+blockquote p {
+		color: #555555;
+		font-size: 13pt;
+		font-weight: bold;
+		text-align: justify;
+		margin-bottom: 0;
+		}
+
+cite {
+		display: block;
+		width: 100%;
+		text-align: right;
+		font-weight: normal;
+		font-style: italic;
+		}
+
+/* ---------- 5. images ---------- */
+
+a img {
+		border: 0;
+		}
+
+#content img {
+		border: 1mm solid #555555;
+		}
+		
+img.floatRight {
+		float: right;
+		margin: 0 0 0.75cm 0.75cm;
+		}
+		
+.columnLeft img, .columnRight img {
+		display: none;
+		}

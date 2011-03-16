@@ -1,0 +1,82 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+	
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px 0;
+		}
+
+h1 {
+		font-size: 1.8em;
+		}
+
+h2 {
+		font-size: 1.4em;
+		}
+
+p {
+		font-size: 1.2em;
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+		width: 700px;
+		margin: 0 auto;
+		background: url(faux-columns-background.gif) 499px 0 repeat-y;
+		}
+		
+#mainContent, #sidebar {
+		float: left;
+		width: 479px;
+		}
+		
+#mainContent {
+		margin-right: 41px;
+		}
+		
+#sidebar {
+		width: 180px;
+		font-size: 90%;
+		}
+		
+.clearFix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		}		
+		
+.singleColumn #wrapper {
+		background: none;
+		}
+		
+.singleColumn #mainContent {
+		width: 700px;
+		margin-right: 0;
+		}
+		
+.singleColumn #sidebar {
+		display: none;
+		}		
+		
+.equalSplitColumns #wrapper {
+		background-position: 350px 0;
+		}
+		
+.equalSplitColumns #mainContent {		
+		width: 330px;
+		}
+		
+.equalSplitColumns #sidebar {
+		width: 329px;
+		font-size: 100%;
+		}

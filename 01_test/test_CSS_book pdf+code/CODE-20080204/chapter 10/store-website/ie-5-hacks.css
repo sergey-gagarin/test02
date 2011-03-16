@@ -1,0 +1,37 @@
+body {
+		text-align: center;
+		}
+
+#wrapper{
+		text-align: left;
+		}
+		
+#sidebar {
+		}
+		
+#mainContent {
+		}
+		
+#navContainer {
+		text-align: center;
+		}
+		
+#navContainer ul {
+		text-align: left;
+		}
+		
+#navigation a:link, #navigation a:visited { 
+		height: 30px;
+		}
+
+#navigation li ul {
+		width: 469px;
+		}
+
+#navigation ul ul, #navigation li li {
+		margin: 0;
+		}
+
+#navigation li li li a:link, #navigation li li li a:visited {
+  		width: 155px;
+		}

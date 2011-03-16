@@ -1,0 +1,56 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		font: 1.2em/1.5 Verdana, Arial, Helvetica, sans-serif;
+		}
+
+/* ---------- add your code below ---------- */
+
+a:link, a:visited {
+		font-weight: bold;
+		}
+
+a:link {
+		color: #f26522;
+		text-decoration: none;
+		}
+
+a:visited {
+		color: #8a8a8a;
+		}
+
+a:hover {
+		color: #f22222;
+		text-decoration: underline;
+		}
+
+a:visited:hover {
+		color: #8a8a8a;
+		}
+
+a:focus {
+		background: yellow;
+		}
+
+a:active {
+		color: #000000;
+		text-decoration: underline;
+		}

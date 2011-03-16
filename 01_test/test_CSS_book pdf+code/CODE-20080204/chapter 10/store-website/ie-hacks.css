@@ -1,0 +1,16 @@
+h1 {
+		line-height: 1.18em;
+		}
+		
+h1+p {
+		line-height: 1.33333333em;
+		}
+		
+#mainContent {
+		width: 71.9%;
+		}
+		
+hr {
+		margin-top: -6px;
+		margin-bottom: 10px;
+		}

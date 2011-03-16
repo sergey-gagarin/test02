@@ -1,0 +1,42 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+		padding: 18px 36px 1px;
+		background: url(background-drop-shadow-2.gif) 50% 0 repeat-y;
+		width: 500px;
+		margin: 0 auto;
+		}
+
+body {
+		background: #878787;
+		}
+
+.contentFooter {
+		width: 500px;
+		height: 20px;
+		background: url(background-drop-shadow-2-footer.gif) 50% 0;
+		padding: 0 36px;
+		margin: 0 auto;
+		}

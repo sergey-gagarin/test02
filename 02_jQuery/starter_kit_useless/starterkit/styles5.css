@@ -1,0 +1,13 @@
+/* CSS Document */
+
+.square {
+  width: 200px;
+  height: 200px;
+  background:    #9999CC;
+
+}
+
+.redSquare {
+  background:  #FF6633;
+
+}

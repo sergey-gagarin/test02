@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Adding styles to forms</title>
+<style type="text/css" media="screen">
+/* <![CDATA[ */
+@import url(adding-styles-to-forms.css);
+/* ]]> */
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <form action="http://www.yourdomain.com/cgi-bin/FormMail.cgi" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+        <p><strong><label for="realname">Name</label></strong><br />
+        <input class="formField" tabindex="11" type="text" id="realname" name="realname" size="30" /></p>
+        <p><strong><label for="email">Email address</label></strong><br />
+        <input class="formField" tabindex="21" type="text" id="email" name="email" size="30" /></p>
+        <p><strong><label for="phone">Telephone</label></strong><br />
+        <input class="formField" tabindex="31" type="text" id="phone" name="phone" size="30" /></p>
+      </fieldset>
+      <p><strong>Are you a Web designer?</strong><br />
+      <input tabindex="41" type="radio" name="designer" value="yes" />Yes | <input tabindex="51" type="radio" name="designer" value="no" />No</p>
+      <p>What platform do you favor?<br />
+      <select class="formField" tabindex="61" name="platform">
+        <option selected="selected">
+          Windows
+        </option>
+        <option>
+          Mac
+        </option>
+        <option>
+          Linux
+        </option>
+        <option>
+          Other
+        </option>
+      </select></p>
+      <p><strong>Message</strong><br />
+      <textarea class="formField" tabindex="71" name="message" rows="5" cols="30"></textarea></p>
+      <p><input class="submitButton" tabindex="81" type="submit" name="SUBMIT" value="SUBMIT" /></p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* CSS Document */
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+  background:   #FF9966;
+}
+
+.class1{
+  background:  #CCFF66;
+}
+
+.class0{
+  background:  #66FF99;
+}

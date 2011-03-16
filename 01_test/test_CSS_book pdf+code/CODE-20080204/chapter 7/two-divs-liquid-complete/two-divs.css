@@ -1,0 +1,45 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+	
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+		}
+
+h1 {
+		font-size: 1.8em;
+		}
+
+h2 {
+		font-size: 1.4em;
+		}
+
+p {
+		font-size: 1.2em;
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#divOne {
+		background: #dddddd;
+		float: left;
+		width: 39%;
+		margin-right: 2%;
+		}
+		
+#divTwo {
+		background: #aaaaaa;
+		float: left;
+		width: 59%;
+		}
+		
+.columnContent {
+		padding: 10px;
+		}

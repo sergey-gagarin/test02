@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Modal Window</title>
+
+ <script src="jquery.min.js" type="text/javascript"></script>
+ 
+<script language="JavaScript">
+
+	var height;
+	var width;
+
+	$(document).ready(function(){
+		height = $(window).height()*0.95;
+		width  = $(window).width()*0.95;
+	});	
+
+function showModalWindow()
+   {
+     window.showModalDialog("modal02.html",
+           "","resizable: yes; status: no; help:no; dialogHeight:"+height+"px; dialogWidth: "+width+"px; ");
+   }
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+<div style="background: #ff9900; width:'100%';" 
+   align="center">
+  
+	<b>showModalDialog() function in use </b>
+  
+ </div>
+ 
+ <center>
+  <a href="javascript: showModalWindow();">
+  Link to open Modal window</a>
+ </center>
+
+
+
+</body>
+</html>

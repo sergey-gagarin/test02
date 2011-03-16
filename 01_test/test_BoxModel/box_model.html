@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Box model test</title>
+  <style type="text/css">
+       #wrapper {
+        width: 800;
+        background: #99FF33;
+       }
+       
+       #it {
+        border: solid green 20px;
+        width: 200px;
+        padding: 50px;
+        margin: 20px;
+       }
+      #wrapper2 {
+        width: 800;
+        background: #99FF33;
+       }
+       
+       #it2 {
+        border: solid green 1px;
+        width: 340px;
+        margin: 20px;
+       }
+       #inner {
+       margin: 70px;
+       width: 200px;
+       border: solid 1px red;
+       }
+  </style>
+  
+  </head>
+  <body>
+    <div id="wrapper">
+    where
+      <div id="it">
+             In FF the total width = 20b+50p+200+50p+20b = 340 px;
+             In IE the total width = The same - ?
+      </div>
+
+    </div>
+    
+     <div id="wrapper2">
+    where
+      <div id="it2">
+          <div id="inner">
+             text 
+          </div>
+      </div>
+
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		}
+
+p {
+		font: 1.1em/1.4 Verdana, Arial, Helvetica, sans-serif;
+		margin-bottom: 1em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+		width: 740px;
+		margin: 0 auto;
+		}
+
+#masthead {
+		padding-top: 20px;
+		}
+
+#navContainer {
+		height: 30px;
+		border-bottom: 5px solid #ad3514;
+		}
+
+#content {
+		padding: 10px;
+		background-color: #eeeeee;
+		}
+
+#navigation ul {
+		list-style-type: none;
+		}
+
+#navigation li {
+		float: left;
+		background: url(css-tab-rollover-image-left.gif) no-repeat 0 0;
+		padding-left: 30px;
+		height: 30px;
+		}
+
+#navigation a:link, #navigation a:visited {
+		font: bold 1.1em Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-decoration: none;
+		display: block;
+		height: 21px;
+		padding: 9px 30px 0px 0px;
+		background: url(css-tab-rollover-image-right.gif) no-repeat 100% 0;
+		}
+
+#navigation a:hover {
+		text-decoration: underline;
+		}
+
+#homePage #homePageLink a:link, #homePage #homePageLink a:visited, #servicesPage #servicesPageLink a:link, #servicesPage #servicesPageLink a:visited, #customerSupportPage #customerSupportPageLink a:link, #customerSupportPage #customerSupportPageLink a:visited, #contactDetailsPage #contactDetailsPageLink a:link, #contactDetailsPage #contactDetailsPageLink a:visited {
+		color: #fff200;
+		}

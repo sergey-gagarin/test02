@@ -1,0 +1,123 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		}
+
+p {
+		font: 1.1em/1.4 Verdana, Arial, Helvetica, sans-serif;
+		margin-bottom: 1em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+		width: 740px;
+		margin: 0 auto;
+		}
+
+#masthead {
+		padding-top: 20px;
+		}
+
+#navContainer {
+		height: 30px;
+		border-bottom: 5px solid #333333;
+		}
+
+#content {
+		padding: 10px;
+		background-color: #eeeeee;
+		}
+
+#navigation ul {
+		list-style-type: none;
+		}
+
+#navigation li {
+		float: left;
+		background: url(css-rollover-grid.gif) no-repeat 0 0;
+		width: 185px;
+		height: 30px;
+		}
+
+#navigation a:link, #navigation a:visited {
+		font: bold 1.1em Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-decoration: none;
+		display: block;
+		height: 21px;
+		padding: 9px 0px 0px 30px;
+		}
+
+#navigation #homePageLink {
+		background-position: 0 0;
+		}
+
+#navigation #servicesPageLink {
+		background-position: -185px 0;
+		}
+
+#navigation #customerSupportPageLink {
+		background-position: -370px 0;
+		}
+
+#navigation #contactDetailsPageLink {
+		background-position: -555px 0;
+		}
+
+#homePage #homePageLink a:link, #homePage #homePageLink a:visited {
+		background: url(css-rollover-grid.gif) 0 -120px;
+		}
+
+#servicesPage #servicesPageLink a:link, #servicesPage #servicesPageLink a:visited {
+		background: url(css-rollover-grid.gif) -185px -120px;
+		}
+
+#customerSupportPage #customerSupportPageLink a:link, #customerSupportPage #customerSupportPageLink a:visited {
+		background: url(css-rollover-grid.gif) -370px -120px;
+		}
+
+#contactDetailsPage #contactDetailsPageLink a:link, #contactDetailsPage #contactDetailsPageLink a:visited {
+		background: url(css-rollover-grid.gif) -555px -120px;
+		}
+
+#navigation li#homePageLink a:hover {
+		background: url(css-rollover-grid.gif) 0 -40px;
+		}
+
+#navigation li#servicesPageLink a:hover {
+		background: url(css-rollover-grid.gif) -185px -40px;
+		}
+
+#navigation li#customerSupportPageLink a:hover {
+		background: url(css-rollover-grid.gif) -370px -40px;
+		}
+
+#navigation li#contactDetailsPageLink a:hover {
+		background: url(css-rollover-grid.gif) -555px -40px;
+		}
+
+#navigation li#homePageLink a:active {
+		background: url(css-rollover-grid.gif) 0 -80px;
+		}
+
+#navigation li#servicesPageLink a:active {
+		background: url(css-rollover-grid.gif) -185px -80px;
+		}
+
+#navigation li#customerSupportPageLink a:active {
+		background: url(css-rollover-grid.gif) -370px -80px;
+		}
+
+#navigation li#contactDetailsPageLink a:active {
+		background: url(css-rollover-grid.gif) -555px -80px;
+		}

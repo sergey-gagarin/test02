@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+table.cal, .cal th, .cal, .cal_date td{
+	border: 1px green solid;
+	border-collapse: collapse;
+	padding: 2px;
+}
+
+.cal th {
+font-weight: bold;
+background-color: #99CCFF;
+
+}
+
+.cal_date {
+background-color: #ccffcc;
+border: 1px green solid;
+
+}

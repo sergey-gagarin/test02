@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Five Ways of Making AJAX Calls with jQuery -DEMO</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8" />
+	</head>
+	<body>
+    	<div id="page-wrap">
+    		<div id="header">
+    			<h1>Make AJAX Calls with jQuery</h1>
+    		</div>
+			
+			<div id="load-div" class="functions">
+				<span>load()</span>
+				<input type="submit" value="load()" id="load_basic" />
+				<input type="submit" value="load() #DOM" id="load_dom" />
+				<input type="submit" value="load() GET" id="load_get" />
+				<input type="submit" value="load() POST" id="load_post" />
+				<input type="submit" value="load() callback" id="load_callback" />
+			</div>
+			
+			<div id="get-json-div"  class="functions">
+				<span>$.getJSON()</span>
+				<form id="getJSONForm">
+					<input type="text" value="Avanti" id="q" />
+					<input type="submit" value="Detect Language" id="getJSON" />
+				</form>
+			</div>
+			
+			<div id="get-script-div"  class="functions">
+				<span>$.getScript()</span>
+				<input type="submit" value="Load a Remote Script" id="getScript" />
+			</div>
+			
+			<div id="get-div"  class="functions">
+				<span>$.get()</span>
+				<input type="submit" value="$.get()" id="get" />
+			</div>
+			
+			<div id="post-div" class="functions">
+				<span>$.post()</span>
+				<input type="submit" value="$.post()" id="post" />
+			</div>
+			
+			<div id="result"  class="functions">
+				
+			</div>
+		</div>
+		
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$.ajaxSetup ({
+		cache: false
+	});
+	var ajax_load = "<img class='loading' src='img/load.gif' alt='loading...' />";
+	
+//	load() functions
+	var loadUrl = "ajax/load.php";
+	$("#load_basic").click(function(){
+		$("#result").html(ajax_load).load(loadUrl);
+	});
+	
+	$("#load_dom").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl + " #picture");
+	});
+	
+	$("#load_get").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl, "language=php&version=5");
+	});
+	
+	$("#load_post").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl, {language: "php", version: 5});
+	});
+	
+	$("#load_callback").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl, null, function(responseText){
+				alert("Response:\n" + responseText);
+			});
+	});
+	
+//	$.getJSON()
+	var jsonUrl = "ajax/json.php";
+	$("#getJSONForm").submit(function(){
+		var q = $("#q").val();
+		if (q.length == 0) {
+			$("#q").focus();
+		} else {
+			$("#result").html(ajax_load);
+			$.getJSON(
+				jsonUrl,
+//				"q="+q,
+				{q: q},
+				function(json) {
+					var result = "<p>Language code is \"<strong>" + json.responseData.language + "</strong>\"</p>";
+					$("#result").html(result);
+				}
+			);
+		}
+		return false;
+	});
+	
+//	$.getScript()
+	var scriptUrl = "ajax/script.php";
+	$("#getScript").click(function(){
+		$("#result").html(ajax_load);
+		$.getScript(scriptUrl, function(){
+			$("#result").html("");
+		});
+	});
+
+//	$.get()
+	$("#get").click(function(){
+		$("#result").html(ajax_load);
+		$.get(
+			loadUrl,
+			{language: "php", version: 5},
+			function(responseText){
+				$("#result").html(responseText);
+			},
+			"html"
+		);
+	});
+	
+//	$.post()
+	$("#post").click(function(){
+		$("#result").html(ajax_load);
+		$.post(
+			loadUrl,
+			{language: "php", version: 5},
+			function(responseText){
+				$("#result").html(responseText);
+			},
+			"html"
+		);
+	});
+</script>
+
+	</body>
+</html>

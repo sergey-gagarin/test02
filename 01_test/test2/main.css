@@ -1,0 +1,76 @@
+/* CSS Document */
+
+
+.picker {
+  position:relative;
+  left:305px;
+  top:-21px;
+  float:left;
+  width:172px;
+  border-width:1px;
+  border-color:#ffcc00;
+  border-style:solid;
+  padding-left:4px;
+  padding-top:4px;
+  padding-bottom:4px;
+  display:none;
+}
+
+
+.month {
+  float:left;
+  border-width:1px;
+  border-color:#ffcc00;
+  border-style:solid;
+  margin:1px;
+  width:94px;
+  padding-left:2px;
+  color:#ffcc00;
+}
+
+.year {
+  float:left;
+  border-width:1px;
+  border-color:#ffcc00;
+  border-style:solid;
+  margin:1px;
+  width:70px;
+  padding-left:2px;
+  color:#ffcc00;
+}
+
+
+.datelive {
+  float:left;
+  background-image:url('datelive.gif');
+  background-repeat:repeat-x;
+  width:20px;
+  height:20px;
+  border-style:solid;
+  border-color:#ffcc00;
+  border-width:1px;
+  text-align:center;
+  color:#ffcc00;
+  margin:1px;
+  text-decoration:none;
+}
+
+.datelive:hover {
+  background-image:url('datelive_over.gif');
+  background-repeat:repeat-x;
+  color:#ffffcc
+}
+
+.dateunlive {
+  float:left;
+  background-image:url('dateunlive.gif');
+  background-repeat:repeat-x;
+  width:20px;
+  height:20px;
+  border-style:solid;
+  border-color:#666666;
+  border-width:1px;
+  margin:1px;
+}
+
+

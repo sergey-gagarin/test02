@@ -1,0 +1,55 @@
+/* ----------  page defaults ---------- */
+
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		background: #cccccc;
+		}
+
+#masthead, #columnWrapper, #footer {
+		font: 1.1em/1.5 Verdana, Arial, sans-serif;
+		}
+
+/* ---------- font styles ---------- */
+
+h1, h2 {
+		font: bold 1.5em Arial, sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 2px;
+		}
+
+p {
+		margin-bottom: 1em;
+		}
+
+/* ---------- structure ---------- */
+
+#masthead {
+		background: #dddddd;
+		padding: 10px;
+		border-bottom: 1px solid #aaaaaa;
+		}
+
+#footer {
+		background: #cccccc;
+		border-top: 1px solid #aaaaaa;
+		padding: 10px;
+		}
+
+.clearFix:after {
+		content: '.';
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		}
+
+/* ---------- add your code below ---------- */

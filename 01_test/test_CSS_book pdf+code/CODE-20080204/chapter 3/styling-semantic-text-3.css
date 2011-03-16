@@ -1,0 +1,54 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		padding: 20px;
+		font-size: 62.5%;
+		}
+
+#wrapper {
+		margin: 0 auto;
+		width: 400px;
+		background: url(styling-semantic-text-baseline.gif);
+		}
+
+/* ---------- add your code below ---------- */
+
+body {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		}
+		
+h1 {
+		font-size: 1.8em;
+		line-height: 1em;
+		margin-bottom: 1em;
+		}
+		
+h2 {
+		font-size: 1.4em;
+		line-height: 1.2857142em;
+		margin-top: 1.9285713em;
+		margin-bottom: 0.6428571em;
+		}		
+
+h3 {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		margin-top: 1.5em;
+		}
+
+p {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
+		}
+		
+		
+
+		

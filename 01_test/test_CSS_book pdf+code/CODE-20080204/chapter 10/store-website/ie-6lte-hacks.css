@@ -1,0 +1,24 @@
+#wrapper {	
+		width: expression(document.body.clientWidth < 762? "760px" : document.body.clientWidth > 1002? "1000px" : "auto");
+		}
+
+#content {
+		height: 1%;
+		}
+		
+#pullNav li, .itemDetails li {
+		background-image: none;
+		}
+		
+#dmenu li.over ul{ /*Display Dropdown*/
+		display: block;
+		left: 0;
+		}
+
+#dmenu li li li {
+		border-bottom: 0;
+		}
+		
+#content a:hover img {
+		border: 1px solid #ad3514;
+		}

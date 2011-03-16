@@ -1,0 +1,13 @@
+#wrapper { 
+	background: #cccccc; 
+	}
+
+#divOne {
+	float: right;
+	width: 50%;
+	}
+
+.separator {
+	height: 0;
+	clear: both;
+	}

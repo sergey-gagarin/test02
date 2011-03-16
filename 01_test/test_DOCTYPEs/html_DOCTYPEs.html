@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>DOCTYPs declarations</title>
+  
+  <link rel="stylesheet" type="text/css" href="style01.css" />
+  </head>
+  <body>
+  
+  <h1>Intro</h1>
+  <p>Currently we have a choise of the most popular and widely supported markup languages
+   HTML4.01 and XHTML 1.0 and recent enhancement - HTML 5. More information about MathML, 
+     Compound, Optional and old HTML2, HTML3 documents doctype declarations is available on
+     <a href="from http://www.w3.org/QA/2002/04/valid-dtd-list.html"> W3C Quality Assuranced site</a>. <br />
+    At the same source we can read that HTML 5 is NOT a standard yet, so it can not pass the validation test. 
+    In case validation is vital for websites and the small icon to prove adhering to the standards
+    is what you are after, HTML4.01 or XHTML 1.0 will do the job. But in case validation is not crucial
+     and advance HTML 5 tags can not be replace, declear &lt!DOCTYPE html&gt. 
+     After all, Google use it. <br />
+  Not a bad idea to check the list of attributes supported in different DOCTYPEs on 
+   <a href="http://www.w3schools.com/tags/ref_html_dtd.asp"> on w3school site </a>.
+          <br />
+          Essential that in HTML4.01 and XHTML 1.0 Transitional versions the following elements are not
+          supported: &ltframe /&gt, &ltframeset&gt <br />
+          In HTML4.01 and XHTML 1.0 Strict versions the following elements are not
+          supported: &ltframe /&gt, &ltframeset&gt, &ltapplet&gt, &ltbasefont /&gt, &ltcenter&gt, &ltdir&gt,
+          &ltfont&gt, &ltiframe&gt, &ltisindex&gt, &ltmenu&gt, &ltnoframes&gt, &lts&gt, &ltstrike&gt, &ltu&gt &ltbr /&gt <br />
+          The Frameset version supports all of the above elements. <br />
+  Information about HTML5 support available on 
+  <a href="http://www.w3schools.com/html5/html5_form_elements.asp" > this page </a> 
+  
+  </p>
+
+  <h1>XHTML</h1>
+  <p>According to <a href="http://www.w3.org/TR/xhtml-media-types/">W3C</a>, 
+     XHTML is not the name of a single, monolithic markup language, but the name of a family of document
+     types which collectively form a family of related markup languages.
+     Since XHTML is a bit stricter than HTML the following should be kept in mind:
+  
+   <ol>
+      <li>XHTML elements must be properly nested</li>
+      <li>XHTML element and attribute names must be in lowercase because XML is case sensitive</li>
+      <li>XHTML elements must always be closed  (trailing-slash sintax &ltbr /&gt)</li>
+      <li>XHTML attribute values must always be quoted</li>
+      <li>XHTML does not support attribute minimization, so value is required checkt="checked"</li>
+      <li>XHTML follows a content model (ex. in &ltul&gt elements only &ltli&gt elements can be included not &ltp&gt)</li>
+      <li>The best place for style and script elements is in the external files 
+            (to evoid problems with rendering spetial charachters &lt or & or ]]&gt or --)</li>
+   </ol>
+   Have a look at the <a href="#guide">main points</a> of Compatibility Guideline and recommended example with the best practices 
+   incorporated from <a href="http://www.w3.org/TR/xhtml-media-types/"> W3C </a> page.
+   <br />
+  </p>
+  
+
+  <h1> Recommended list of DOCTYPE declaraitions</h1>
+   <p>From W3C  <a href="http://www.w3.org/QA/2002/04/valid-dtd-list.html"> Quality Assurance site </a>:
+   
+    The doctype declaration must be exact (both in spelling and in case) to have the desired effect.
+ 
+    </p>
+
+    <p> HTML 4.01 Strict </p>
+    <pre> 
+       &lt!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                             "http://www.w3.org/TR/html4/strict.dtd"&gt
+    </pre>
+
+    <p> HTML 4.01 Transitional </p>
+    <pre> 
+       &lt!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                                "http://www.w3.org/TR/html4/loose.dtd"&gt
+    </pre>
+
+    <p> HTML 4.01 Frameset </p>
+    <pre> 
+       &lt!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+                               "http://www.w3.org/TR/html4/frameset.dtd"&gt
+    </pre>
+
+
+    <p> XHTML 1.0 Strict </p>
+    <pre> 
+       &lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt
+    </pre>
+    
+        <p> XHTML 1.0 Transitional </p>
+    <pre> 
+       &lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt
+    </pre>
+    
+        <p> XHTML 1.0 Frameset </p>
+    <pre> 
+       &lt!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+                                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt
+    </pre>
+
+  
+  <h2>important for XHTML</h2>
+ 
+    <p>The root element of the document (html) must contain an xmlns declaration for the XHTML namespace</p>
+       <pre> &lt html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" &gt
+       </pre>
+
+
+
+
+    <h2>More about headers</h2>
+  <p> W3C <a href="http://www.w3.org/TR/xhtml-media-types/"> XHTML Media Types </a> 
+  gives simple recommendtion about choosing media types: <br />
+  In general, 'application/xhtml+xml' should be used for XHTML Family documents, 
+  and the use of 'text/html' should be limited to HTML-compatible XHTML Family documents 
+  intended for delivery to user agents that do not explicitly state in their HTTP Accept header
+   that they accept 'application/xhtml+xml' [HTTP]. The media types 'application/xml' and 'text/xml' may also be used,
+    but whenever appropriate, 'application/xhtml+xml' or 'text/html' should be used rather than those generic XML media types.
+  <br />
+  Therefore to maintain cross browsers and backwords compatibility the following declaration 
+  is a preferable one:
+  <pre>
+&lthead&gt
+&ltmeta http-equiv="Content-Type" content="text/html; charset=utf-8" &gt
+&lttitle&gtPage title here&lt/title&gt                                          
+&lt/head&gt
+</pre>
+It is a good habit to declear charset before &lttitle&gt, because in this case some special characters 
+such as  &hearts; or &copy; can be shown correctly in the page title.  
+  </p>
+
+<!-- 
+ from w3c http://www.w3.org/TR/xhtml-media-types/
+There are several possible media types that can be used on XHTML Family documents. 
+This Note addresses only the use of 'text/html' and 'application/xhtml+xml'.
+
+This document summarizes the current best practice for using those various Internet
+ media types for XHTML Family documents.
+-->  
+    <!-- From HTML 5 & book  -->
+    <!--p>Most people would agree that using the UTF-8 character set is probably a good idea for
+Western-language page authors because it gives them access to international character
+glyphs when needed without causing them any trouble:
+&ltmeta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt
+Deciding which MIME type to use isn’t as straightforward. For standard HTML, the
+MIME type is always text/html. However, when XHTML is in play, confusion and
+browser problems ensue. Numerous pundits bemoan the fact that most XHTML is served as
+text/html, particularly because it doesn’t give you the strict parsing that XML tends to
+afford. In the use of XHTML, you may choose from text/html, text/xml, application/
+xml, and application/xhtml+xml as potential MIME types. Given the potential for
+compatibility and even rendering problems, for better or worse, the MIME type text/html
+will be used for nearly all (X)HTML examples in this book so that browser rendering is
+ensured. This hedge will be explored a bit more later in the chapter when addressing the
+implications of XHTML. In summary at the point of writing this edition, it is recommend
+specifying a Content-Type of text/html and the UTF-8 character set, and doing so as
+your first element within the head, like so:
+<pre>
+&lthead&gt
+&ltmeta http-equiv="Content-Type" content="text/html; charset=utf-8" &gt
+&lttitle&gtPage title here&lt/title&gt                                          
+&lt/head&gt
+</pre> </p -->
+  
+
+<h2 id="guide">Compatibility Guideline. Choosen poins from <a href="http://www.w3.org/TR/xhtml-media-types/#compatGuidelines">W3C Working Group Note (appendix A)</a>:</h2>
+This appendix summarizes design guidelines for authors who wish their XHTML documents to render on 
+both XHTML-aware and modern HTML user agents. The purpose of providing these guidelines is to supply a 
+simple collection that, if followed, will give reasonable, predictable results in modern user agents. 
+
+Document authors should treat these as best practices.
+
+<ol>
+
+    <li>DO use external scripts if your script uses < or  & or ]]> or --.
+        DO NOT embed a script in a document if it contains any of these characters.
+Rationale: While XML provides the CDATA structure to embed data such as this, 
+that method will not work correctly should the document be delivered as media type text/html. 
+The best way to insulate your scripts and stylesheets is to make them external. 
+Both XML and HTML have mechanisms that can protect this content when it is embedded in a document. 
+If you must embed the content, the following patterns can be used:
+Portably escaping embedded script contents:
+
+   <script>//<![CDATA[
+   ...
+   //]]></script>
+
+Portably escaping embedded style contents:
+
+   <style>/*<![CDATA[*/
+   ...
+   /*]]>*/</style> 
+   </li>
+    <li>DO ensure that attribute values are on a single line and only use single whitespace characters.</li> 
+    <li>DO NOT use line breaks and multiple consecutive white space characters within attribute values.</li>
+    <li>DO use both lang and xml:lang attributes when specifying the language of an element in markup 
+   languages that support the use of both.
+   Rationale: HTML 4 documents use the lang attribute to identify the language of an element. 
+   XML documents use the xml:lang attribute. CSS has a "lang" pseudo-selector that automatically uses 
+   the appropriate attribute depending on the media type. Therefore, specifying both attributes ensures 
+   that single CSS selectors will work in both modes.
+  </li>
+    <li>DO NOT use the name attribute to identify elements, even in languages that permit the use of name such as XHTML 1.0.</li>
+    <li>DO ensure that the values used for the id attribute are limited to the pattern [A-Za-z][A-Za-z0-9:_.-]*.</li>
+    <li> DO use explicit tbody elements within tables.
+   Rationale: While the content model of the table element permits the tbody element to be skipped, in HTML 4 this element is implicit. HTML 4 user agents will silently add this element, thus potentially confusing scripts or style sheets.
+</li>
+    <li>   DO ensure that any CSS properties on the html element are also specified on the body element.
+   Rationale: Some HTML user agents only recognize CSS properties on the body element.
+</li>
+   
+</ol>
+
+  
+<h2>   Example from <a href="http://www.w3.org/TR/xhtml-media-types/#compatGuidelines"> W3C Working Group Note (appendix B)</a>:</h2>
+<p>   
+   To have backword browsers compatibility and ensure that developed pages will adhere comming HTML5, 
+   XHTML5 standards the safe way is to use the following declaration and tags
+   (in this example A.#N refers to W3C recommendations given in the Guidelines):
+</p>    
+   
+   <pre>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+                      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+</pre>
+
+<p>In this case, note that the <code>lang</code> attribute is not used
+on the <code>html</code> element.  XHTML 1.1 does not support the
+
+<code>lang</code> attribute.</p>
+
+<pre>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;!-- use lang and xml:lang if your language supports it - A.7 --&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"&gt;
+&lt;head&gt;
+  
+
+  &lt;!-- Embed encoding when you can't set it from the server - A.9 --&gt;
+  &lt;meta http-equiv="Content-Type"
+        content="text/html; charset=utf-8" /&gt;
+  
+  &lt;title&gt;Example Portable XHTML&lt;/title&gt;
+
+  &lt;!-- use base, not xml:base - A.20 --&gt;
+  &lt;base href="http://www.w3.org/MarkUp" /&gt;
+
+  &lt;!-- use an external stylesheet or script - A.4, A.14 --&gt;
+
+  &lt;link href="style/style.css" rel="stylesheet" type="text/css" /&gt;
+
+  &lt;!-- if you must embed, escape bad stuff - A.4, A.14 --&gt;
+  &lt;style type="text/css"&gt;/*&lt;![CDATA[*/
+      /* Use lower case names in stylesheets - A.13 */
+      .main { padding-left: 10px; }
+      /* put properties on whole document - A.24 */
+      html {background-color: #e4e5e9; }
+      body {background-color: #e4e5e9; }
+  /*]]&gt;*/&lt;/style&gt;
+
+  &lt;!-- Need full form of boolean attributes like defer - A.10 --&gt;
+
+  &lt;script defer="defer" type="text/javascript"&gt;//&lt;![CDATA[
+      var SOME_VALUE="&lt;this is a test&gt;";
+  //]]&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- use the id attribute to identify elements - A.8 --&gt;
+
+&lt;div id="main"&gt;
+
+    &lt;!-- ensure there are never linebreaks in attribute values - A.5 --&gt;
+    &lt;h1 title="This section shows how to write portable content"&gt;
+        Main Section
+    &lt;/h1&gt;
+    &lt;!-- IMG can never have content so use shorthand form - A.2 --&gt;
+    &lt;img src="http://www.w3.org/Icons/w3c_main" alt="W3C logo" /&gt;  	
+
+    &lt;!-- An element with no content cannot use shorthand - A.3 --&gt;
+
+    &lt;p&gt;&lt;/p&gt;
+    
+    &lt;!-- Apostrophes must be escaped using numeric - A.16 --&gt;
+    &lt;p title='rule for &amp;#39;ampersands&amp;#39;'&gt;
+
+        &lt;!-- Ampersands must be escaped - A.12 --&gt;
+        Some material &amp;amp; some other material
+
+    &lt;/p&gt;
+
+    &lt;table&gt;
+        &lt;!-- use explicit tbody element - A.19 --&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Table Cell&lt;/td&gt;
+
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+
+   
+  </body>
+</html>

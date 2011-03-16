@@ -1,0 +1,55 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 30px;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+a:link {
+		color: #f26522;
+		}
+
+a:visited {
+		color: #8a8a8a;
+		}
+
+a:hover {
+		color: #f22222;
+		}
+
+a:active {
+		color: #000000;
+		}
+
+#navigation a, #navigation a:visited {
+		text-decoration: none;
+		font-weight: bold;
+		color: #666666;
+		text-transform: uppercase;
+		}
+
+#navigation a:hover {
+		text-decoration: underline;
+		}
+
+#footer a:link, #footer a:visited {
+		font-size: 0.8em;
+		}

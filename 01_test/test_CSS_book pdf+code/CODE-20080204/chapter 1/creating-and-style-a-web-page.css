@@ -1,0 +1,64 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		color: #000000;
+	
+		padding: 20px;
+		background-image: url(mainBackground.jpg);
+		background-repeat: no-repeat;
+	  background-position:center;
+	  background-attachment: fixed;  /**scroll - is a default*/
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		margin: 0 auto;
+		width: 500px;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+h1 {
+		font: 1.5em/1.8em Arial, sans-serif;
+		text-transform: uppercase;
+		
+		}
+
+.go {
+		position: absolute;
+		background: url(submit_bg.jpg) no-repeat;
+		width: 100px;
+		height: 20px;
+		border: 1px black;
+		}
+		
+submit {
+		position: absolute;
+		background: url(submit_bg.jpg) no-repeat;
+		width: 100px;
+		height: 20px;
+		border: 1px black;
+		}
+
+
+blockquote {
+		margin: 0 100px;
+		}
+
+blockquote p {
+		font-style: italic;
+		font-size: 1.2em;
+		}

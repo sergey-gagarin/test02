@@ -1,0 +1,43 @@
+host: 203.122.234.153
+root
+qpwoei102938
+SCP
+
+
+http://wcms.senwill.com.au/sitemanager/
+qpwoei102938
+
+
+
+Database
+
+
+phpmyadmin is available here
+
+http://wcms.senwill.com.au/.mysql
+
+root/  ALskdjfh56
+
+senwill (17)
+
+    * Browse defines
+    * Browse employees
+    * Browse enums
+    * Browse jobs
+    * Browse jobs_employees
+    * Browse jobs_extras
+    * Browse jobs_materials
+    * Browse jobs_reinstatements
+    * Browse jobs_subcontractors
+    * Browse lists
+    * Browse materials
+    * Browse messages
+    * Browse subcontractors
+    * Browse suppliers
+    * Browse suppliers_materials
+    * Browse users
+    * Browse vehicles
+
+
+
+

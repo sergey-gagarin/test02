@@ -1,0 +1,108 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+.sheepImageMap {
+		font: 1.0em/1 Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		background: url(fake-image-map-gray.jpg);
+		width: 500px;
+		height: 375px;
+		position: relative;
+		margin-bottom: 10px;
+		}
+
+.sheepImageMap a {
+		display: block;
+		text-indent: -100000px;
+		text-decoration: none;
+		}
+
+.sheepImageMap:hover .sheepOne, .sheepImageMap:hover .sheepTwo, .sheepImageMap:hover .sheepThree {
+		border: 1px solid #000000;
+		}
+
+.sheepImageMap li {
+		list-style: none;
+		position: absolute;
+		display: block;
+		}
+
+.sheepOne {
+		width: 80px;
+		height: 104px;
+		left: 60px;
+		top: 50px;
+		}
+
+.sheepOne a {
+		height: 104px;
+		}
+
+.sheepOne a:hover {
+		background: url(fake-image-map-color.jpg) -61px -51px;
+		}
+
+.sheepTwo {
+		width: 200px;
+		height: 126px;
+		left: 141px;
+		top: 108px;
+		}
+
+.sheepTwo a {
+		height: 126px;
+		}
+
+.sheepTwo a:hover {
+		background: url(fake-image-map-color.jpg) -142px -109px;
+		}
+
+.sheepThree {
+		width: 68px;
+		height: 38px;
+		left: 418px;
+		top: 19px;
+		}
+
+.sheepThree a {
+		height: 38px;
+		}
+
+.sheepThree a:hover {
+		background: url(fake-image-map-color.jpg) -419px -20px;
+		}
+
+.sheepImageMap a:hover {
+		text-indent: 0;
+		color: #ffffff;
+		}
+
+.sheepImageMap a:hover span {
+		padding: 2px;
+		background-color: #000000;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		}

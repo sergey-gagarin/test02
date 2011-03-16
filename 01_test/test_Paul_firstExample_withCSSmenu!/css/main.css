@@ -1,0 +1,132 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+  }
+
+body{
+  margin: auto;
+  background: #9999FF;
+  width: 700px;
+  font: 1.1em/1.4 Verdana, Arial, Helvetica, sans-serif;
+}
+
+div.content{
+	text-align: justify;
+  padding: 10px;
+  background-color: #eeeeee;
+  height: 380px;
+  overflow: auto;
+}
+
+
+#wrapper {
+		width: 700px;
+		margin: 0 auto;
+		}
+
+#masthead {
+		padding-top: 2px;
+		}
+
+#navContainer {
+		height: 30px;
+		border-bottom: 5px solid #990000;
+		
+		
+		width: 700px;
+		padding-top: 2px;
+		}
+
+#navigation ul {
+		list-style-type: none;
+		}
+
+#navigation li {
+		position: relative;
+		display: block;
+		float: left;
+		text-transform: uppercase;
+/*main menu background*/
+    background: #0066CC; 
+ 		width: 175px;
+		height: 30px;
+		
+		}
+
+/*height of the menu element no-link*/
+#navigation li p{
+    height:10px;
+    padding: 5px 0px 0px 30px;
+}
+
+/*change of menu background*/
+#navigation li:hover {
+    display: block;
+    background: #66CCCC;
+}
+
+/*height of the menu element-link*/
+#navigation a:link, #navigation a:visited {
+		text-transform: uppercase;
+	  color: black;
+		text-decoration: none;
+		display: block;
+		height: 24px;
+		padding: 5px 0px 0px 30px;
+		}
+
+/*main menu=categories hovered*/
+#navigation a:hover {
+	 background: #66CCCC;
+	 
+		}
+
+#navigation a:active {
+	background: #66CCCC; 
+  }
+
+/*sub-menu=sections out of the screen*/
+#navigation li ul {
+		border-top: 1px solid #990000;
+		width: 175px;
+		position: absolute;
+		left: -10000px
+		}
+
+/*sub-menu=sections on the screen*/
+#navigation li:hover ul {
+		display: block;
+		left: 0;
+		}
+
+/*sub-menu=sections border*/
+#navigation li li {
+    background: #66CCCC;
+		border-bottom: 1px solid #990000;
+		}
+
+/*sub-menu=sections border*/
+#navigation li li a{
+  border-left: 5px solid #66CCCC;
+  background: #66CCCC;
+  }
+
+
+#navigation li li a:link, #navigation li li a:visited {
+		text-transform: none;
+	  }
+
+
+#navigation li li a:hover {
+	  background: #66CCCC;
+		border-left: 5px solid #ffcc00;
+		}
+
+#navigation li li a:active {
+		border-left-color: #ff0000;
+		}
+
+

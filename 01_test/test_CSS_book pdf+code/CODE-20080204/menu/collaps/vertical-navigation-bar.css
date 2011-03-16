@@ -1,0 +1,102 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+		background-color: #aaaaaa;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+#new li{
+display: inline;
+}
+
+
+#navigation ul {
+		list-style-type: none;
+		width: 140px;
+		font: 1.2em/1 Arial, Helvetica, sans-serif;
+		}
+/* added */	
+
+#navigation li{
+	display: inline;
+	}
+
+#navigation ul.collapsibleList {
+	display: none;
+	}
+
+#navigation ul ul {
+		font-size: 1em;
+		}
+		
+
+
+
+#navigation a:link, #navigation a:visited {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		display: block;
+		padding: 3px 12px 3px 8px;
+		background-color: #666666;
+		color: #ffffff;
+		border-top: 1px solid #dddddd;
+		border-right: 1px solid #333333;
+		border-bottom: 1px solid #333333;
+		border-left: 1px solid #dddddd;
+		}
+
+#navigation a:hover {
+		background-color: #777777;
+		}
+
+#navigation a:active {
+		padding: 2px 13px 4px 7px;
+		background-color: #444444;
+		color: #eeeeee;
+		border-top: 1px solid #333333;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: 1px solid #333333;
+		}
+
+#navigation li li a:link, #navigation li li a:visited {
+		text-decoration: none;
+		text-transform: lowercase;
+		font-weight: normal;
+		padding: 3px 3px 3px 17px;
+		background-color: #999999;
+		color: #111111;
+		}
+
+#navigation li li a:hover {
+		background-color: #aaaaaa;
+		}
+
+#navigation li li a:active {
+		padding: 2px 4px 4px 16px;
+		background-color: #888888;
+		color: #000000;
+		border-top: 1px solid #333333;
+		border-right: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+		border-left: 1px solid #333333;
+		}

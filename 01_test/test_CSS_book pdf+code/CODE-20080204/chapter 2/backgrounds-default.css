@@ -1,0 +1,34 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+		padding: 18px;
+		background: #ffffff;
+		width: 500px;
+		margin: 0 auto;
+		}
+		
+body {
+		background: #ffffff url();
+		}		

@@ -1,0 +1,219 @@
+/* 
+
+STYLE SHEET FOR WE LAY FLOORS, INC EXAMPLE WEB SITE
+Created by Craig Grannell
+www.snubcommunications.com
+
+ToC
+
+	1. defaults
+	2. structure
+	3. links and navigation
+	4. fonts
+	5. images
+
+Notes
+
+*/
+
+
+
+/* --------- 1. defaults  --------- */
+
+.printOnly {
+		dislay: none;
+		}
+
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+body {
+		padding: 20px 0;
+		background: #333333 url(assets/page-background.gif) repeat-x;
+		}
+		
+/*  --------- 2. structure  --------- */
+
+#printLogo {
+		position: absolute;
+		left: -1000px;
+		}
+
+#wrapper {
+		width: 738px;
+		margin: 0 auto;
+		border: 1px solid #555555;
+		}
+		
+#masthead {
+		border-bottom: 8px solid #cccccc;
+		}
+		
+#logo {
+		background: url(assets/masthead-background.jpg);
+		height: 82px;
+		margin-bottom: 1px;
+		}
+		
+#content {
+		background-color: #ffffff;
+		/*background-image: url(assets/baseline-grid.gif);*/
+		padding: 18px;
+		}
+
+hr  {
+		height: 0.7em;
+		margin-bottom: 2.9em;
+		background-color: #cccccc;
+		color: #cccccc;
+		border: none;
+		}
+
+.columnLeft, .columnRight {
+		float: left;
+		width: 342px;
+		}
+
+.columnLeft {
+		margin-right: 18px;
+		}
+				
+/* ---------- 3. links and navigation ---------- */
+
+#navContainer ul {
+		text-align: center;
+		}
+
+#navContainer li {
+		display: inline;
+		}
+
+#navigation {
+		background: #111111;
+		padding: 6px 0;
+		}
+
+#navigation a:link, #navigation a:visited {
+		font: bold 1.2em Arial, Helvetica, sans-serif;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 6px 10px;
+		}
+		
+#navigation a:hover {
+		color: #ffd800;
+		}
+
+#homePage #homePageLink a:link, #homePage #homePageLink a:visited, #servicesPage #servicesPageLink a:link, #servicesPage #servicesPageLink a:visited, #customerSupportPage #customerSupportPageLink a:link, #customerSupportPage #customerSupportPageLink a:visited, #contactDetailsPage #contactDetailsPageLink a:link, #contactDetailsPage #contactDetailsPageLink a:visited {
+		background: #28b767 url(assets/active-section-tab-background.gif) 0 100% repeat-x;
+		border-top: 1px solid #ca8d5c;
+		}
+
+#subNavigation {
+		margin-top: -2px;
+		background: #b76628 url(assets/sub-navigation-background-tile.gif) 0 100% repeat-x;
+		border-bottom: 1px solid #6b6b6b;
+		padding: 6px 0;
+		}
+		
+#subNavigation a:link, #subNavigation a:visited {
+		font: bold 1.1em Arial, Helvetica, sans-serif;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 6px 10px;
+		}
+
+#subNavigation a:hover {
+		color: #ffd800;
+		}
+		
+/* ---------- 4. fonts ---------- */
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Arial, Helvetica, sans-serif;
+		}
+
+h1 {
+		font-size: 1.6em;
+		line-height: 1.125em;
+		margin-bottom: 0.125em;
+		}
+
+h2 {
+		font-size: 1.3em;
+		line-height: 1.3846153em;
+		}
+
+p {
+		font-size: 1.1em;
+		line-height: 1.63636363em;
+		margin-bottom: 1.63636363em;
+		}
+
+#masthead p {
+		color: #ffffff;
+		font-size: 1.2em;
+		padding: 24px 20px 0 320px;
+		line-height: 1.3em;
+		}
+
+p.footer {
+		clear: both;
+		text-align: right;
+		padding-top: 1.63636363em;
+ 		}
+
+blockquote {
+		background: url(assets/quote-open.gif) 0 0 no-repeat;
+		margin: 3.6em 150px;
+		}
+		
+blockquote p {
+		color: #555555;
+		font-size: 1.3em;
+		line-height: 1.3846153em;
+		font-weight: bold;
+		text-align: justify;
+		background: url(assets/quote-close.gif) 100% 90% no-repeat;
+		padding: 0 33px;
+		margin-bottom: 0;
+		}
+
+cite {
+		display: block;
+		width: 100%;
+		text-align: right;
+		font-weight: normal;
+		font-style: italic;
+		}
+
+blockquote>p+p {
+		background: none;
+		}
+
+/* ---------- 5. images ---------- */
+
+a img {
+		border: 0;
+		}
+
+#content img {
+		border: 1px solid #555555;
+		}
+		
+img.leadImage {
+		float: right;
+		margin: 0 0 18px 18px;
+		}
+		
+.columnLeft img, .columnRight img {
+		display: block;
+		margin-bottom: 1.8em;
+		}

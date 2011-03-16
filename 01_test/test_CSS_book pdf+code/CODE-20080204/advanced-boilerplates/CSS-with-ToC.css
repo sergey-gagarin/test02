@@ -1,0 +1,123 @@
+/* 
+
+STYLE SHEET FOR [WEB SITE]
+Created by [AUTHOR NAME]
+[URL OF AUTHOR]
+
+ToC
+
+	1. defaults
+	2. structure
+	3. links and navigation
+	4. fonts
+	5. images
+
+Notes
+
+*/
+
+
+
+/* --------- 1. defaults  --------- */
+
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+body {
+		}
+		
+/*  --------- 2. structure  --------- */
+
+#wrapper {
+		}
+		
+#masthead {
+		}
+		
+#logo {
+		}
+		
+#navContainer {
+		}
+
+#content {
+		}
+
+#footer {
+		}
+
+	/* float-clearing rules */
+.separator {
+		clear: both;
+		}
+
+.separatorInvisible {
+		clear: both;
+		height: 1px;
+		}
+
+.clearFix:after {
+    	content: "."; 
+    	display: block; 
+    	height: 0; 
+    	clear: both; 
+    	visibility: hidden;
+		}		
+		
+/* ---------- 3. links and navigation ---------- */
+
+a {
+		}
+		
+a:hover {
+		}
+
+#navigation {
+		}
+
+#navigation a {
+		}
+
+#navigation ul {
+		}
+
+#navigation li {
+		}
+		
+/* ---------- 4. fonts ---------- */
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		}
+
+h1, h2, h3, h4, p, ul {
+		}
+
+h1 {
+		}
+
+h2 {
+		}
+
+h3 {
+		}
+		
+h4 {
+		}
+
+p {
+		}
+
+ul {
+		}
+
+/* ---------- 5. images ---------- */
+
+a img {
+		}

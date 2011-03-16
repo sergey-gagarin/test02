@@ -1,0 +1,58 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+	
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+body {
+		background: #4d4d4d url(page-background.gif) repeat-x;
+		}
+		
+#wrapper {
+		width: 600px;
+		margin: 0 auto;
+		border: 2px solid #777777;
+		border-top: 0;
+		background: #ffffff url(wrapper-background.gif) 0 100% repeat-x;
+		padding: 20px 20px 50px;
+		}
+		
+.boxout {
+		float: right;
+		width: 180px;
+		margin: 0 0 20px 20px;
+		background: #e1e1e1 url(boxout-bottom.gif) 0 100% no-repeat;
+		padding: 0 10px;
+		}
+		
+.boxout h2 {
+		font: bold 1.2em Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		color: #ffffff;
+		background: #d7932a url(boxout-top-orange.gif) no-repeat;
+		margin: 0 -10px 10px;
+		padding: 5px 10px;
+		border-bottom: 1px solid #ffffff;
+		}		
+		
+.boxout p {
+		font-size: 0.9em;
+		}		

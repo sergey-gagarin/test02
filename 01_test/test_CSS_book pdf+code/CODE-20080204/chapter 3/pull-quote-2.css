@@ -1,0 +1,102 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		padding: 20px;
+		font-size: 62.5%;
+		}
+
+#wrapper {
+		margin: 0 auto;
+		width: 400px;
+		}
+
+/* ---------- add your code below ---------- */
+
+body {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Arial, Helvetica, sans-serif;
+		line-height: 1.5;
+		}
+		
+h1 {
+		font-size: 1.8em;
+		line-height: 1em;
+		padding-bottom: 7px;
+		border-bottom: 1px solid #cccccc;
+		margin-bottom: 7px;
+		color: #666666;
+		font-weight: normal;
+		}		
+		
+h2, h3 {
+		color: #333333;
+		}
+
+h2 {
+		font-size: 1.3em;
+		}
+		
+h3 {		
+		font-size: 1.2em;
+		margin-top: 1.65em;
+		}
+		
+p {
+		font-size: 1.2em;
+		margin-bottom: 1.2em;
+		}
+		
+h1+p {
+		font-weight: bold;
+		color: #222222;
+		}
+		
+blockquote {
+		background: url(quote-open.gif) 0 0 no-repeat;
+		margin: 2.4em 2em;
+		}		
+		
+blockquote p {
+		color: #555555;
+		font-size: 1.3em;
+		font-weight: bold;
+		text-align: justify;
+		background: url(quote-close.gif) 100% 90% no-repeat;
+		padding: 0 33px;
+		margin-bottom: 0;
+		}		
+		
+cite {
+		background: none;
+		display: block;
+		text-align: right;
+		font-size: 1.1em;
+		font-weight: normal;
+		font-style: italic;
+		}		
+		
+blockquote>p+p {
+		background: none;
+		}		
+		
+blockquote.floatRight {
+		float: right;
+		width: 150px;
+		background: none;
+		border-top: 5px solid #dddddd;
+		border-bottom: 5px solid #dddddd;
+		padding: 10px 0;
+		margin: 0 0 2em 2.4em;
+		}
+		
+blockquote.floatRight p {
+		text-align: center;
+		background: none;
+		padding: 0;
+		}		

@@ -1,0 +1,50 @@
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #CC9966;
+  padding: 50px;
+}
+
+#menu {
+  	height: 30px;                      /*  !!!   */
+		border-bottom: 5px solid #990000;
+    background: #FF9900;
+		width: 950px;
+		padding-top: 2px;
+
+}
+
+#menu222 ul{
+
+/*list-style-image: url('http://localhost/02_jQuery/test_02%20flwebdev/plus.gif');*/
+}
+
+#menu li {
+		position: relative;
+		display: block;
+		float: left;
+	/*	text-transform: uppercase;*/
+/*main menu background*/
+  background: #FF9900; 
+ 		width: 185px;
+ 		
+	/*	height: 30px;*/
+		
+		}
+		
+#menu li ul {
+width: 180px;
+margin-left: 5px;
+}
+
+#menu li ul li{
+margin-left: 5px;
+width: 160px;
+
+}
+

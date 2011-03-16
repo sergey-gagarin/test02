@@ -1,0 +1,45 @@
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #CC9966;
+  padding: 50px;
+}
+
+
+
+.clear{ clear: both;}
+
+#wrapper4 {
+  width: 250px;
+  height: 250px;
+  border: solid 1px rgb(102,51,255);
+  overflow: hidden;
+  background: rgb(165,165,165);
+}
+
+#wrapper4 img{
+width: 150px;
+height: 150px;
+display: none;
+}
+
+#wrapper5 {
+  width: 250px;
+  height: 250px;
+  border: solid 1px rgb(102,51,255);
+  overflow: hidden;
+  background: rgb(165,165,165);
+}
+
+#wrapper5 img{
+
+position: relative;
+display: none;  
+width: 150px;
+height: 150px;
+}

@@ -1,0 +1,167 @@
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #CC9966;
+  padding: 50px;
+}
+
+/*  ok pop-up */
+.bubbleInfo {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    border: 1px solid green;
+    width: 200px;
+    display: none; /* keeps the popup hidden if no JS available */
+}
+
+/*****************************************/
+
+
+/*******not good **********/
+.rss-popup {
+margin: 100px auto;
+padding: 0;
+width: 100px;
+position: relative;
+}
+ 
+div.rss-popup em {
+background: url(bubble.png) no-repeat;
+width: 100px;
+height: 49px;
+position: absolute;
+top: -70px;
+left: -0px;
+text-align: center;
+text-indent: -9999px;
+z-index: 2;
+display: none;
+}
+ 
+#rss-icon {
+width: 42px;
+height: 42px;
+background: url(icon.png) no-repeat 0 0;
+text-indent: -9999px;
+margin: 0 auto;
+display: block;
+}
+
+/*****************************************************/
+
+
+
+
+
+/******** img loading - spinning        *****************/
+DIV#loader.loading {
+            background: url(images/spinner.gif) no-repeat center center;
+        }
+
+ DIV#loader {
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+        }
+
+
+/************************************************************/        
+
+
+.topDiv {
+margin-top: 10px;
+}
+
+.control {
+
+float: left;
+width: 200px;
+background: #a4a4a4;
+}
+
+.result {
+float: left;
+width: 200px;
+background: #ccc;
+
+}
+
+.code {
+float: left;
+width: 350px;
+background: #99ccff;
+}
+
+
+.clear{ clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+#menu {
+  	height: 30px;
+		border-bottom: 5px solid #990000;
+    background: #FF9900;
+		width: 900px;
+		padding-top: 2px;
+
+}
+
+#menu li {
+		position: relative;
+		display: block;
+		float: left;
+		text-transform: uppercase;
+/*main menu background*/
+    background: #0066CC; 
+ 		width: 175px;
+	/*	height: 30px;*/
+		
+		}
+#menu li ul {
+margin-left: 4px;
+}
+
+#menu li ul li{
+margin-left: 4px;
+}
+
+
+#viewOptions{
+  background: #00CC99;
+  border: 3px ridge white;
+  width: 300px;
+  outline: solid 2px #00CC99;
+  padding: 5px;
+}
+
+
+#viewOptions ul{list-style-type: none;}
+
+
+#view2 {
+
+  width: 300px;
+  border: groove 3px white;
+}
+
+#view2 div{
+display: none;
+width: 300px;
+}

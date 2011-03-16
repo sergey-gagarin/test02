@@ -1,0 +1,94 @@
+* {
+		margin: 0;
+		padding: 0;    /* but  div and p still have  gaps*/
+		}
+	
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px 0;
+		}
+
+h1 {
+		font-size: 1.8em;
+		}
+
+h2 {
+		font-size: 1.4em;
+		}
+
+p {
+		font-size: 1.2em;
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+    width: 700px;
+    margin: 0 auto;
+    }
+
+#divOne {
+    background: #ddd;
+    padding-bottom: 1.5em;   /* - no more gap bitween div */
+    float: left;
+    width: 350px;
+    margin-right: 10px;
+        }
+    
+#divTwo {
+    background: #aaa;
+    float: left;
+    width: 250px;
+    }
+    
+.ClearBoth {
+clear: both;
+
+}
+
+#div3 {
+     background: #ddd;
+    padding-bottom: 1.5em;   /* - no more gap bitween div */
+    
+    width: 350px;
+    margin-right: 10px;
+    border: 2px red solid;
+    clear: both;
+    }
+  
+.clearFix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		}	
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

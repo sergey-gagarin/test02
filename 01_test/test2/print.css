@@ -1,0 +1,23 @@
+/* CSS Document */
+
+body{
+display: none;
+
+}
+
+
+div.nop{
+width:400px;
+height: 400px;
+color: red;
+background: green;
+display: none;
+}
+
+p{
+color: blue;
+background: green;
+ display: block;
+}
+
+/*media="print"*/

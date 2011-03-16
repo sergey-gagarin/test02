@@ -1,0 +1,58 @@
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #CC9966;
+  padding: 50px;
+}
+
+#first {
+width: 100%;
+}
+
+.clear{ clear: both;}
+
+
+.meal{
+  background: rgb(255,153,51);
+  margin-top: 15px;
+  width: 700px;
+  
+}
+
+.meal_img{
+  width: 20px;
+  height: 20px;
+}
+
+.meal ul{
+  list-style: none;    
+}
+
+.meal ul li{
+  display: inline;
+  margin-left: 20px;
+  /*border: 1px solid green;*/    
+}
+
+.meal_price{
+  border: none;
+  background: rgb(255,153,51);
+}
+
+
+.button25 {
+border: red solid 1px;
+position: relative;
+left: 20px;
+text-align: right;
+}
+
+.choice{
+ border: red;
+background: green;
+}

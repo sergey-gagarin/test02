@@ -1,0 +1,15 @@
+body {
+		text-align: center;
+		}
+		
+#wrapper {
+		text-align: left;
+		}
+		
+h1.mainHeading {
+		padding-bottom: 27px;
+		}
+
+#thumbnailsContainer img {
+		margin: 0 -3px;
+		}

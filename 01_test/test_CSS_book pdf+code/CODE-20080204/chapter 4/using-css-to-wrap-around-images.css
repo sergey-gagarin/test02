@@ -1,0 +1,41 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+body {
+		background: #aaaaaa;
+		padding: 20px;
+		}
+		
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		}
+
+p {
+		font: 1.2em/1.5em Verdana, sans-serif;
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- images ---------- */
+
+a img {
+		}
+		
+div#content img {/* generic style for all images within the content div */
+		border: 1px solid #000000;
+		}
+
+div#content .photo {/* specific override for the image with the .photo class */
+		border-width: 8px 8px 20px 8px;
+		border-style: solid;
+		border-color: #ffffff;
+		float: right;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		}
+		

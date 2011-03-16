@@ -1,0 +1,308 @@
+/* 
+
+STYLE SHEET FOR BUYSOMESTUFF.co.uk EXAMPLE WEB SITE
+Created by Craig Grannell
+www.snubcommunications.com
+
+ToC
+
+	1. defaults
+	2. structure
+	3. links and navigation
+	4. fonts
+	5. images
+
+Notes
+
+*/
+
+
+
+/* --------- 1. defaults  --------- */
+
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+body {
+		padding: 30px 0;
+		}
+		
+/*  --------- 2. structure  --------- */
+
+#wrapper {
+		max-width: 1000px;
+		min-width: 760px;
+		margin: 0 auto;
+		}
+		
+#masthead {
+		border-bottom: 18px solid #eeeeee;
+		}
+		
+#logo {
+		padding-bottom: 10px;
+		padding-left: 10px;
+		}
+		
+#content {/* moved here */
+		padding: 0 18px;
+		background: #eeeeee url(assets/column-stripe.gif) 27% 0 repeat-y;
+		}
+
+#sidebar {
+		float: left;
+		width: 24%;
+		margin-right: 4%;
+		}
+		
+#mainContent {
+		float: left;
+		width: 72%;
+		}	
+		
+.itemContainer {
+		border-bottom: 1px solid #333333;
+		margin-bottom: 16px;
+		}
+
+.lastItemContainer {
+		border: 0;
+		margin-bottom: 0;
+		}
+		
+.itemContainer:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+		}
+
+.itemImage {
+		float: right;
+		margin: 0 0 18px 18px;
+		}
+
+hr {
+		clear: both;
+		height: 1px;
+		border: 0;
+		color: #333333;
+		background-color: #333333;
+		margin: 0 0 16px;
+		}
+	
+/* ---------- 3. links and navigation ---------- */
+
+a:link {
+		color: #d27448;
+		}
+		
+a:visited {
+		color: #333333;
+		}
+		
+a:hover, a:focus {
+		color: #ad3514;
+		}
+
+#pullNav {
+		float: right;
+		padding-right: 10px;
+		}
+
+#pullNav li {
+		display: inline;
+		background: url(assets/vertical-bar.gif) 0 55% no-repeat; 
+		padding: 0 3px 0 8px; 
+		}
+
+ul#pullNav li:first-child {
+		background: none;
+		}
+
+#navContainer {
+		height: 30px;
+		border-bottom: 5px solid #ad3514;
+		background: url(assets/nav-background.gif) repeat-x;
+		}
+
+#navigation ul {
+		list-style-type: none;
+		width: 740px;
+		margin: 0 auto;
+		}
+
+#navigation li { 
+		float: left; 
+		background: url(assets/css-tab-rollover-image.gif) no-repeat 0 0; 
+		width: 185px; 
+		height: 30px; 
+		} 
+
+#navigation a:link, #navigation a:visited { 
+		font: bold 1.1em Arial, Helvetica, sans-serif; 
+		text-transform: uppercase; 
+		color: #ffffff; 
+		text-decoration: none; 
+		display: block; 
+		height: 21px;
+		padding: 9px 0px 0px 30px; 
+		}
+
+#navigation a:hover { 
+		background: url(assets/css-tab-rollover-image.gif) 0 -40px; 
+		} 
+
+#navigation a:active { 
+		background: url(assets/css-tab-rollover-image.gif) 0 -80px; 
+		} 
+ 
+#homePage #homePageLink a:link, #homePage #homePageLink a:visited, #servicesPage #servicesPageLink a:link, #servicesPage #servicesPageLink a:visited, #customerSupportPage #customerSupportPageLink a:link, #customerSupportPage #customerSupportPageLink a:visited, #contactDetailsPage #contactDetailsPageLink a:link, #contactDetailsPage #contactDetailsPageLink a:visited {
+		background: url(assets/css-tab-rollover-image.gif) 0 -120px; 
+		}
+
+#navigation li {
+		position: relative;
+		}
+
+#navigation li ul {
+		border: 2px solid #ad3514;
+		width: 465px;
+		position: absolute;
+		left: -10000px;
+		}
+
+#navigation li:hover ul  {
+		display: block;
+		left: 0;
+		}
+ 
+#navigation li li {
+		background: #d27448;
+		height: auto;
+		width: auto;
+		}
+
+#navigation li li li a:link, #navigation li li li a:visited {
+		text-transform: none;
+		padding: 10px;
+  		width: 135px;
+  		height: auto;
+		}
+
+#navigation li li li a:hover {
+  		background: #ad3514;
+  		}
+  		
+#navigation li li li a:active {
+ 		background: #ed1c24;
+ 		}
+ 
+#navigation li li li {
+		width: 155px;
+		height: 3em;
+		border-bottom: 1px solid #ad3514;
+		}
+
+#navigation ul ul ul {
+		border: 0;
+		width: 155px;
+		float: left;
+		position: relative;
+		}
+		
+/* ---------- 4. fonts ---------- */
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		color: #333333;
+		}
+
+h1 {
+		float: left;
+		padding-right: 0.3em;
+		font: bold 1.4em/1.2571428em Arial, Helvetica, sans-serif;
+		}
+
+h2 {
+		font: normal 1.3em/1.6em Arial, Helvetica, sans-serif;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		}
+
+#sidebar h2 {
+		font: bold 1.1em/1.6em Verdana, Arial, Helvetica, sans-serif;
+		margin-bottom: 0;
+		text-transform: none;
+		}
+
+p {
+		font: 1.1em/1.6em Verdana, Arial, Helvetica, sans-serif;
+		margin-bottom: 1.6em;
+		}
+
+h1+p {
+		font-size: 1.2em;
+		line-height: 1.4666666em;
+		}
+
+#content ul, #pullNav {
+		font: 1.1em/1.6em Verdana, Arial, Helvetica, sans-serif;
+		margin-bottom: 1.6em;
+		list-style-type: none;
+		}
+
+#content .itemDetails ul {
+		margin-bottom: 0;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+.itemDetails li {
+		float: left;
+		background: #ffffff url(assets/vertical-bar.gif) 0 55% no-repeat; 
+		padding: 2px 8px 2px 8px; 
+		}
+
+.itemDetails li:first-child {
+		background: #ffffff;
+		}
+
+.itemName, .itemCost {
+		font-weight: bold;
+		}
+
+.itemDetails p {
+		clear: left;
+		}
+
+
+p.footer {
+		clear: both;
+		text-align: right;
+		background: #ffffff;
+		border-top: 18px solid #eeeeee;
+		margin: 0 -18px;
+		padding: 18px;
+		}
+
+/* ---------- 5. images ---------- */
+
+a img {
+		border: 0;
+		}
+		
+.itemImage img {
+		border: 1px solid #333333;
+		}
+		
+.itemImage img:hover {
+		border: 1px solid #ad3514;
+		}		

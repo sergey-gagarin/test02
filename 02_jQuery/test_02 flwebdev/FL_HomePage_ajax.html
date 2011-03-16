@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+  <link href="styles6.css" rel="stylesheet" type="text/css">
+  <!--
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+ -->
+   <script src="jquery.min.js" type="text/javascript"></script>
+   
+   <script type="text/javascript">
+
+
+    $(document).ready(function(){
+    
+        $('#view2 div#first').css('display','block'); // 
+     
+     
+     $("a").click(function(event){
+            
+            event.preventDefault();
+            var n = $(this).attr("name");
+            
+         //   alert("name = "+n); // good
+         //   $('#view2 div').each(function(){ alert(this.id);  });     // good
+           
+          //    $('#view2 div').each(function(){ if (n == this.id) {alert(this.id);} ;  }); // good
+           //   $('#view2 div').fadeTo(1000, 0.009);
+              
+      // v - 1 Ok : line 1+ line 2 /////////////////////////////////////////////////////////////////////////// 
+      //    $('#view2 div').css('display','none');      // line 1 - good
+     //    $('#view2 div').each(function(){ if (n == this.id) { $(this).css('display','block');} ;  }); // line 2 - good
+     //////////////////////////////////////////////////////////////////////////////////////////////               
+     
+     // v -2 
+      //  text -  with .fadeOut(1000, function(){...    - 1000 millisecond fadeOut not good as fadeIn starts at the same time - no fadeIn in fact !
+      //   
+        $('#view2 div').fadeOut(1, function(){             
+                               $(this).each(function(){ if (n == this.id) { $(this).fadeIn(1000);} ;  });
+          
+                                              });
+     /////////////////////////////////////////////////////////////////////////////////////                                          
+                                                        
+     });
+     });
+
+    </script>
+    
+  </head>
+  
+  <body>
+   <div id="viewOptions">
+   <ul>
+    <li><a id="iddddddd" href=# name="first" title="ilia Curae;">    the 1 first option </a></li>
+    <li><a href=# name="second"> the 2 second option </a> </li>
+    <li><a href=# name="third"> the 3 third option </a>        </li>
+   </ul> 
+   </div>
+   
+   <div id="view">
+   
+   </div>  
+   
+   <div id="view2">
+      <h3> The place to put the text </h3>
+      <div id="first"> 1 First !!! Phasellus molestie, felis et mattis semper, ante mauris vulputate velit, sit amet varius orci velit vel mauris. Etiam hendrerit hendrerit lectus, porttitor euismod lectus pretium in. Quisque vel mollis nunc! Sed porta purus tristique urna varius ornare? Donec gravida lobortis augue, a placerat purus aliquet nec. Praesent id odio sapien, id venenatis dui. Donec elementum massa ac tellus pellentesque et luctus dolor cursus? Integer justo sapien; dignissim sit amet venenatis vitae, consectetur sed odio. Mauris convallis nisl vitae mauris luctus ut aliquam neque aliquet. Quisque eleifend purus at libero mattis ultrices. In at metus turpis, eget imperdiet nunc. Sed ultricies, sem vel rhoncus congue; lorem ipsum porttitor ligula, vel malesuada sapien dui ut arcu. Aliquam sapien nunc, eleifend et accumsan malesuada, facilisis in risus. Vestibulum aliquam dictum purus sed dictum. Cras tincidunt nibh id purus pulvinar pellentesque. Phasellus ac condimentum nisi. Duis vestibulum tincidunt varius. Cras quis massa eget tortor interdum tincidunt. Quisque mauris justo, laoreet sed porttitor at, convallis non arcu.  
+        </div>
+      <div id="second"> 2 Second !!! Pellentesque at arcu vitae turpis cursus interdum et vitae tellus. Nulla facilisi. Nullam convallis adipiscing ultricies. Fusce at velit enim, vel luctus nisl. Curabitur pulvinar, lacus vitae bibendum adipiscing, tellus elit dictum nisl, vel feugiat mi magna dictum lorem. Suspendisse in magna nunc. Maecenas at mi nisi, a vehicula nibh. Suspendisse eleifend feugiat sapien, sed tincidunt augue cursus at. Vivamus eu risus eu lectus congue commodo. Sed nec est pulvinar libero rhoncus euismod quis a enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tincidunt diam facilisis nulla fermentum mollis ultricies quam vulputate?  
+      </div>
+      <div id="third"> 3 Third !!! Proin mollis nunc at libero viverra condimentum. Nam at tincidunt lacus. Sed laoreet aliquam ligula; vitae mattis dolor placerat id. Nullam interdum lacus id erat volutpat euismod. Curabitur a arcu condimentum metus vestibulum tincidunt sit amet ut arcu. Curabitur id tortor at massa iaculis iaculis. Vestibulum luctus placerat orci, eu blandit nibh semper non. Fusce vehicula nisi tristique dui mollis volutpat. Morbi porttitor risus vitae odio volutpat quis lacinia mauris dapibus! Cras eu metus quam, non facilisis mauris! Fusce vestibulum sapien et lectus tristique eget ornare sem auctor. Nam mattis nibh nec est sollicitudin nec adipiscing tortor dignissim. Praesent commodo, mi facilisis hendrerit interdum; tellus nunc dignissim turpis, non eleifend leo erat ut elit. Nulla facilisi.  
+      </div>
+   
+   </div> 
+   
+   Aliquam facilisis accumsan eros quis auctor. Morbi tincidunt venenatis suscipit. Mauris rutrum enim quis orci placerat id ultricies risus molestie. Aliquam fringilla, erat vitae tempor dignissim; augue leo consectetur diam, id vehicula felis magna in massa. In porttitor laoreet vehicula. Duis venenatis metus lorem, vitae mattis nibh. Quisque metus sapien, gravida eget hendrerit quis, pharetra facilisis turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In rhoncus leo lacinia tellus scelerisque sed mattis ligula aliquam! Aliquam non lacinia nunc. Curabitur sed felis sed velit feugiat scelerisque. Integer turpis neque, egestas a posuere at, semper at eros. Nulla sodales molestie molestie. Vivamus vehicula diam a turpis malesuada convallis. Proin urna ipsum, cursus nec porta eu, rutrum vel purus. In interdum metus at purus dictum eu congue justo gravida.
+
+Duis ut mauris sed sem elementum aliquet ut ac tortor. Phasellus bibendum cursus bibendum. Morbi ultricies ante vitae lacus adipiscing gravida consequat urna scelerisque. Nullam pellentesque, diam a volutpat varius, tortor diam volutpat eros, pharetra pretium dolor ante non nibh. Aliquam auctor odio sit amet justo viverra interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras elementum commodo nisl in rutrum. In at leo nec mi porttitor dapibus. Suspendisse velit felis, vestibulum eu varius non, aliquet id nisi. Nunc at ante nisl. Duis eleifend imperdiet sem, quis dictum elit vulputate quis? Maecenas nisl odio, euismod sed tristique at, sagittis et ipsum. 
+    
+  </body>
+</html>
+

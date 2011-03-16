@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Adding controls</title>
+<style type="text/css" media="screen">
+/* <![CDATA[ */
+/* ]]> */
+</style>
+</head>
+<body>
+  <form action="http://www.yourdomain.com/cgi-bin/FormMail.cgi" method="post">
+    <p><strong>Name</strong><br />
+    <input type="text" name="realname" size="30" /></p>
+    <p><strong>Email address</strong><br />
+    <input type="text" name="email" size="30" /></p>
+    <p><strong>Telephone</strong><br />
+    <input type="text" name="phone" size="30" /></p>
+    <p><strong>Are you a Web designer?</strong><br />
+    <input type="radio" name="designer" value="yes" />Yes | <input type="radio" name="designer" value="no" />No</p>
+    <p>What platform do you favor?<br />
+    <select name="platform">
+      <option selected="selected">
+        Windows
+      </option>
+      <option>
+        Mac
+      </option>
+      <option>
+        Linux
+      </option>
+      <option>
+        Other
+      </option>
+    </select></p>
+    <p><strong>Message</strong><br />
+    <textarea name="message" rows="5" cols="30"></textarea></p>
+    <p><input type="submit" name="SUBMIT" value="SUBMIT" /></p>
+  </form>
+</body>
+</html>

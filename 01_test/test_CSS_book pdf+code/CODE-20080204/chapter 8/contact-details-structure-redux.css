@@ -1,0 +1,51 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.8 Verdana, Arial, Helvetica, sans-serif;
+		padding: 18px;
+		/*background: url(styling-semantic-text-baseline.gif);*/
+		}
+
+/* ---------- add your code below ---------- */
+.vcard {
+		width: 200px;
+		background: #eeeeee;
+		border: 1px solid #cccccc;
+		padding: 8px;
+		margin-bottom: 1.5em;
+		}
+
+dt {/* styles 'Contact details' */
+		font: bold 1.5em/1.2em Arial, Helvetica sans-serif;
+		margin-bottom: 1.2em;
+		text-transform: uppercase;
+		}
+
+dd dt {/* styles sub-heads */
+		font: bold 1.2em/1.5em Arial, Helvetica sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		}
+
+dd dd dt {/* repositions tel labels */
+		float: left;
+		padding-right: 5px;
+		display: block;
+		text-transform: none;
+		}
+
+address {/* gap under address + no italics */
+		padding-bottom: 1.5em;
+		font-style: normal;
+		}
+
+
+address, dd dd dt, dd dd dd {
+		font: 1.2em/1.5em Verdana, Arial, sans-serif;
+		}

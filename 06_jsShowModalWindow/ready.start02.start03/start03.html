@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Modal Window</title>
+
+ <script src="js/jquery.min.js" type="text/javascript"></script>
+ 
+<script language="JavaScript">
+
+	var height;
+	var width;
+	var newWin=null;
+
+	var indexURL = "ajax.php";
+
+	$(document).ready(function(){
+		height = $(window).height()*0.5;
+		width  = $(window).width()*0.5;
+	});	
+
+	
+function showModalWindow()
+   {
+		alert('show');
+
+		
+
+		setInterval('reloadPage()', 5000);  // start reloading when the modal win is open.
+
+		newWin = window.open("modal03.php", 
+                              "newWin", 
+                              "width="+width+",height="+height+", left=200, resizable, top=250");
+	   
+   }
+
+//function updateDiv(){
+ //   $('#div-id').html(newContent);
+//}
+
+$(window).click(function(e)
+		{
+				if(newWin && !newWin.closed)
+				{
+					//alert('Please close window '+newWin.closed);
+					e.preventDefault();
+					//newWin = window.open(l, "newWin");
+					newWin.focus();
+				}
+
+		});
+
+
+
+function reloadPage()
+{
+	$("#info").load(indexURL);
+	setInterval('reloadPage()', 5000);   // keep reloading.  ?? Does not work.
+
+}
+
+
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+<div style="background: #ff9900; width:'100%';" 
+   align="center">
+  
+	<b>showModalDialog() function NOT in use </b>
+  
+ </div>
+ 
+ <center>
+  <a href="javascript: showModalWindow();">
+  Link to open Modal window</a>
+ </center>
+ 
+ <div id="info">
+ 	<h3>Part 1</h3>
+ 	Sed quis metus ligula, a suscipit arcu? Mauris dapibus laoreet libero nec dignissim. Cras mollis lectus a dolor tristique quis mattis arcu vestibulum. Maecenas eu viverra orci! Donec ut consequat arcu? Maecenas eu arcu fringilla urna accumsan condimentum. Donec arcu velit, tempor quis rhoncus eu, congue quis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta vehicula congue. Aliquam suscipit aliquam libero; vitae congue diam volutpat in. Integer malesuada interdum commodo. Morbi et metus sit amet lectus bibendum pretium in vitae leo. Maecenas non pulvinar orci. Donec accumsan fermentum risus, eu tristique justo tincidunt ac. Quisque molestie molestie nisl; placerat feugiat ipsum consequat sit amet. Cras rhoncus pulvinar laoreet. Quisque porta sapien eget diam pharetra adipiscing. Sed non dolor ac ligula ultrices porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget arcu arcu, a ullamcorper dolor.
+<h3>Part 2</h3>
+Sed venenatis; nisl eget fringilla auctor, nunc lacus accumsan tellus, sed feugiat magna dolor nec sapien. Etiam malesuada, urna sed viverra semper, mi libero adipiscing justo, eu tincidunt ligula magna sit amet nibh. Nulla eleifend ipsum tortor, et ultrices nisl. Quisque porttitor consectetur auctor. Sed ultricies, purus tempus vehicula ullamcorper; velit dolor porta ligula, non sollicitudin orci orci ut odio. Suspendisse ut eros vitae nisi iaculis fermentum. Nam nibh nisl, feugiat non blandit tincidunt, sollicitudin ac lorem. Donec porta mattis tortor tempus viverra. Integer libero risus, ullamcorper in vulputate quis, facilisis et odio. Suspendisse laoreet risus sit amet enim eleifend sollicitudin. Donec non mauris arcu. Suspendisse facilisis metus elit! In metus purus, lobortis ut scelerisque nec, mattis at odio. Nullam non arcu sit amet velit iaculis vehicula. Praesent sit amet nulla risus; aliquam varius eros.
+<h3>Part 3</h3>
+Aenean fringilla erat sit amet tellus suscipit pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce venenatis lacus mattis lectus pellentesque consectetur. Mauris diam felis, bibendum sed vehicula sed, tempus sit amet nulla. Maecenas et purus vel augue suscipit facilisis nec sit amet orci. Nulla interdum odio id metus auctor vel ultrices sem dapibus. In risus risus, pellentesque eget vehicula quis, volutpat in velit. Suspendisse sit amet nisi nisl. Donec rhoncus felis faucibus massa suscipit quis congue erat faucibus. Sed ac nisl tempor lorem tempus egestas ac dignissim neque.
+ 	
+ </div>
+
+
+
+</body>
+</html>

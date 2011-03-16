@@ -1,0 +1,79 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Georgia, "Times New Roman", Times, serif;
+		;
+		background: #dddddd;
+		}
+
+p {
+		font-size: 1.3em;
+		margin-bottom: 1em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+		width: 700px;
+		margin: 0 auto;
+		border-right: 1px solid #898989;
+		border-bottom: 1px solid #898989;
+		border-left: 1px solid #898989;
+		background: #ffffff;
+		}
+
+#content {
+		padding: 0 15px;
+		}
+
+#navContainer {
+		font: 1.1em/1 Georgia, "Times New Roman", Times, serif;
+		background: #d7d7d7;
+		text-align: center;
+		padding: 7px 0px;
+		border-top: 1px solid #898989;
+		border-bottom: 1px solid #898989;
+		margin-bottom: 10px;
+		}
+
+#navigation ul {
+		list-style: none;
+		}
+
+#navigation li {
+		display: inline;
+		padding: 0px 9px;
+		border-right: 1px solid #aaaaaa;
+		}
+
+#navigation #contactDetailsPageLink {
+		border-right: none;
+		}
+
+#navigation a:link, #navigation a:visited {
+		text-transform: uppercase;
+		text-decoration: none;
+		}
+
+#navigation a:link {
+		color: #000000;
+		}
+
+#navigation a:visited {
+		color: #222222;
+		}
+
+#navigation a:hover {
+		text-decoration: underline;
+		}
+
+#navigation a:active {
+		color: #ff0000;
+		}

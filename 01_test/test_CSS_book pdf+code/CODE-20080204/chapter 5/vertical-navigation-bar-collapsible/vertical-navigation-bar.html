@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Creating a vertical navigation bar with collapsible sections</title>
+<style type="text/css" media="screen">
+/* <![CDATA[ */
+@import url(vertical-navigation-bar.css);
+/* ]]> */
+</style>
+<script src="vertical-navigation-bar.js" type="text/javascript">
+</script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="navigation">
+      <ul>
+        <li>
+          <a href="#" onclick="toggle(this); return false;">Section one</a>
+          <ul style="display: block;">
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" onclick="toggle(this); return false;">Section two</a>
+          <ul class="collapsibleList">
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" onclick="toggle(this); return false;">Section three</a>
+          <ul class="collapsibleList">
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

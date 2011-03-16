@@ -1,0 +1,70 @@
+/* CSS Document 
+to style months buttons on cuisine calendar
+*/
+
+body {
+      margin: 0;
+      padding:0;
+     }
+
+.b {
+     background:#fff; 
+     border:0; 
+     color:#990033; 
+     font-size: 120%; 
+     font-weight: bold;
+     }
+
+.calendar {
+      width: 100%;
+      height: 100%;
+      background: red; 
+      padding: 0;
+      margin: 0;  
+     }
+     
+table.month_table {
+     padding: 0;
+     margin: 0;
+     background: #fff; 
+     border: 2px solid #990033;
+     border-collapse: collapse;
+     width: 100%;
+     color:#990033;
+     font-weight: bold;
+     }    
+
+table.month_table th {
+     padding: 0;
+     margin: 0;
+     border: 1px solid #990033;
+     border-collapse: collapse;
+     text-align: center;
+     color:#990033;
+     width: 130px;
+     } 
+
+table.month_table td {
+     padding: 0;
+     margin: 0;
+     border: 1px solid #990033;
+     border-collapse: collapse;
+     text-align: left;
+     vertical-align: top;
+     color:#990033;
+     height: 50px;
+     width: 130px;
+     }
+     
+.month_table a:link, a:visited{
+     text-decoration: none;
+     color: #990033;
+     }
+
+#grey {
+     background: e2e2e2;
+     }
+
+
+
+

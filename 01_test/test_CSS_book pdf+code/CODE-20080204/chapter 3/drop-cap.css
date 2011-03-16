@@ -1,0 +1,66 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		padding: 20px;
+		font-size: 62.5%;
+		}
+
+#wrapper {
+		margin: 0 auto;
+		width: 400px;
+		}
+
+/* ---------- add your code below ---------- */
+
+body {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Arial, Helvetica, sans-serif;
+		line-height: 1.5;
+		}
+		
+h1 {
+		font-size: 1.8em;
+		line-height: 1em;
+		padding-bottom: 7px;
+		border-bottom: 1px solid #cccccc;
+		margin-bottom: 7px;
+		color: #666666;
+		font-weight: normal;
+		}		
+		
+h2, h3 {
+		color: #333333;
+		}
+
+h2 {
+		font-size: 1.3em;
+		}
+		
+h3 {		
+		font-size: 1.2em;
+		margin-top: 1.65em;
+		}
+		
+p {
+		font-size: 1.2em;
+		margin-bottom: 1.2em;
+		}
+		
+h1+p {
+		font-weight: bold;
+		color: #222222;
+		}
+		
+h1+p:first-letter {
+		float: left;
+		font-size: 3em;
+		line-height: 1.0em;
+		margin-top: -3px;
+		margin-right: 0.15em;
+		}		

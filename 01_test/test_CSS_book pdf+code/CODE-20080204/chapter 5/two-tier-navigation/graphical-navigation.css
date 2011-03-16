@@ -1,0 +1,84 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		background: #333333;
+		padding-top: 20px;
+		}
+
+p {
+		font: 1.1em/1.4 Verdana, Arial, Helvetica, sans-serif;
+		margin-bottom: 1em;
+		}
+
+/* ---------- add your code below ---------- */
+
+#wrapper {
+		width: 750px;
+		margin: 0 auto;
+		background-color: #ffffff;
+		border: 1px solid #555555;
+		}
+
+#masthead {
+		border-bottom: 8px solid #cccccc;
+		}
+
+#content {
+		background: #ffffff;
+		padding: 10px;
+		}
+
+#navContainer ul {
+		text-align: center;
+		}
+
+#navContainer li {
+		display: inline;
+		}
+
+#navigation {
+		background: #111111;
+		padding: 6px 0;
+		}
+
+#navigation a:link, #navigation a:visited {
+		font: bold 1.2em Arial, Helvetica, sans-serif;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 6px 10px;
+		}
+
+#navigation a:hover {
+		color: #ffd800;
+		}
+
+#homePage #homePageLink a:link, #homePage #homePageLink a:visited, #servicesPage #servicesPageLink a:link, #servicesPage #servicesPageLink a:visited, #customerSupportPage #customerSupportPageLink a:link, #customerSupportPage #customerSupportPageLink a:visited, #contactDetailsPage #contactDetailsPageLink a:link, #contactDetailsPage #contactDetailsPageLink a:visited {
+		background: #28b767 url(active-section-tab-background.gif) 0 100% repeat-x;
+		border-top: 1px solid #ca8d5c;
+		}
+
+#subNavigation {
+		margin-top: -2px;
+		background: #b76628 url(sub-navigation-background-tile.gif) 0 100% repeat-x;
+		border-bottom: 1px solid #6b6b6b;
+		padding: 6px 0;
+		}
+
+#subNavigation a:link, #subNavigation a:visited {
+		font: bold 1.1em Arial, Helvetica, sans-serif;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 6px 10px;
+		}
+
+#subNavigation a:hover {
+		color: #ffd800;
+		}

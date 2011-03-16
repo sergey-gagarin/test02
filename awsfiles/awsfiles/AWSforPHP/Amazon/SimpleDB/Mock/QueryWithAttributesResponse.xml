@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QueryWithAttributesResponse xmlns="http://sdb.amazonaws.com/doc/2007-11-07/">
+  <QueryWithAttributesResult>
+    <!--Zero or more repetitions:-->
+    <Item>
+      <Name>string</Name>
+      <!--Zero or more repetitions:-->
+      <Attribute>
+        <Name>string</Name>
+        <!--Optional:-->
+        <Value>string</Value>
+      </Attribute>
+    </Item>
+    <!--Optional:-->
+    <NextToken>string</NextToken>
+  </QueryWithAttributesResult>
+  <ResponseMetadata>
+    <RequestId>string</RequestId>
+    <BoxUsage>string</BoxUsage>
+  </ResponseMetadata>
+</QueryWithAttributesResponse>

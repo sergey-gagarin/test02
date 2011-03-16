@@ -1,0 +1,58 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+	
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+ul {
+		list-style-type: none;
+		background: url(better-list-star.gif) 0 1px no-repeat;
+		}
+
+ul ul {
+		background: url(better-list-shadow.gif) repeat-x;
+		border-left: 1px dotted #aaaaaa;
+		padding: 10px;
+		}
+		
+ul ul ul {
+		background: none;
+		border-left: 0;
+		}
+		
+li {
+		text-transform: uppercase;
+		padding-left: 20px;
+		font-weight: bold;
+		color: #666666;
+		}
+		
+li li {
+		text-transform: none;
+		background: url(better-list-square.gif) 0 2px no-repeat;
+		font-weight: normal;
+		color: #333333;
+		}
+
+li li li {
+		background: url(better-list-hollow-square.gif) 0 2px no-repeat;
+		}

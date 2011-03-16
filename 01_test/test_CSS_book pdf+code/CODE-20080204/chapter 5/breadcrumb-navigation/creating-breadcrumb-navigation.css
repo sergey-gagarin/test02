@@ -1,0 +1,39 @@
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+		}
+
+#wrapper {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+p {
+		margin-bottom: 1.5em;
+		}
+
+/* ---------- add your code below ---------- */
+
+ul#breadcrumbs {
+		font-size: 1.2em;
+		margin-bottom: 1em;
+		}
+
+#breadcrumbs li {
+		display: inline;
+		background: url(double-arrow.gif) 0 50% no-repeat;
+		padding: 0 10px 0 15px;
+		}
+
+ul#breadcrumbs li:first-child {
+		background: none;
+		}

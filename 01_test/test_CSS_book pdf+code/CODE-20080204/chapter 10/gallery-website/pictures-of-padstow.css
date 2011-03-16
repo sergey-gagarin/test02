@@ -1,0 +1,110 @@
+/* 
+
+STYLE SHEET FOR PICTURES OF PADSTOW EXAMPLE WEB SITE
+Created by Craig Grannell
+www.snubcommunications.com
+
+ToC
+
+	1. defaults
+	2. structure
+	3. links and navigation
+	4. fonts
+	5. images
+
+Notes
+
+*/
+
+
+
+/* --------- 1. defaults  --------- */
+
+* {
+		margin: 0;
+		padding: 0;
+		}
+
+body {
+		/*background: url(assets/baseline-grid.gif);*/
+		}
+		
+/*  --------- 2. structure  --------- */
+
+#wrapper {
+		width: 740px;
+		margin: 0 auto;
+		}
+		
+#masthead {
+		padding-top: 32px;
+		border-bottom: 1px solid #e1e1e1;
+		margin-bottom: 20px;
+		}
+
+#mainImageContainer {
+		float: left;
+		width: 480px;
+		margin-right: 20px;
+		}
+		
+#thumbnailsContainer {
+		float: left;
+		width: 240px;
+		}
+
+/* ---------- 3. links and navigation ---------- */
+
+/* ---------- 4. fonts ---------- */
+
+html {
+		font-size: 100%;
+		}
+
+body {
+		font-size: 62.5%;
+		}
+
+h1.mainHeading {
+		position: relative;
+		width: 342px;
+		height: 28px;
+		overflow: hidden;
+		padding-bottom: 19px;
+		font-size: 20px;
+		line-height: 1em;
+		}
+
+h1.mainHeading span {
+		position: absolute;
+		background: #ffffff url(assets/pictures-of-padstow.gif) no-repeat;
+		width: 100%;
+		height: 100%;
+		}
+
+p {
+		font: 1.1em/1.81818181em Verdana, Arial, Helvetica, sans-serif;
+		color: #898989;
+		}
+
+p em {
+		font-size: 0.9em;
+		}
+
+#thumbnailsContainer li {
+		display: inline;
+		}
+
+/* ---------- 5. images ---------- */
+
+a img {
+		border: 0;
+		}
+
+#imgPhoto {
+		margin-bottom: 20px;
+		}
+
+#thumbnailsContainer img {
+		float: left;
+		}

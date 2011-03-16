@@ -1,0 +1,61 @@
+/* ---------- add your code below ---------- */
+
+* {
+		padding: 0;
+		margin: 0;
+		}
+
+html {
+		font-size: 100%;
+		}
+		
+body {
+		font: 62.5%/1.5 "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+		padding: 20px;
+		}
+		
+table {
+		border-collapse: collapse;
+		}
+		
+th, td {
+		border: 1px solid #c9c9c9;
+		font-size: 1.1em;
+		padding: 1px 4px;
+		}
+		
+caption {
+		font-weight: bold;
+		font-size: 1.3em;
+		text-transform: uppercase;
+		padding: 0 0 5px;
+		}		
+		
+th {
+		background: url(table-header-stripe.gif) 0 50% repeat-x;
+		text-align: left;
+		}
+		
+tfoot {
+		background-color: #dddddd;
+		color: #555555;
+		}
+		
+tfoot td {
+		font-size: 1.0em;
+		text-align: center;
+		}
+		
+tbody tr.alt td {
+		background: #e7edf6;
+		}
+		
+tbody tr:hover td, tbody tr.over td {
+		background: #5389d7;
+		color: #ffffff;
+		}
+		
+tbody td {
+		border-top: 0;
+		border-bottom: 0;
+		}		

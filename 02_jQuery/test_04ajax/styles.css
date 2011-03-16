@@ -1,0 +1,29 @@
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #CC9966;
+  padding: 50px;
+}
+
+.square {
+  background: rgb(204,255,0);
+}
+
+
+.red {
+  background: rgb(255,102,204);
+}
+
+#resultDIV {
+  background: rgb(153,255,153);
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  padding: 10px;
+
+}
